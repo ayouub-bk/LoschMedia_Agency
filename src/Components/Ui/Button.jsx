@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Button = () => {
   return (
-    <button className='text-red-400' > Book Now </button>
-  )
-}
+    <>
+      <button className="bg-highlight text-primary hover:bg-hover1 p-2 ">
+        Book a Call
+      </button>
+    </>
+  );
+};
 
-export default Button
+export default Button;

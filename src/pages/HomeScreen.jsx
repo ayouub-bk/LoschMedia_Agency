@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Topbar from "../Components/sections/Topbar";
 
 const HomeScreen = () => {
   return (
-    <div>HomeScreen</div>
-  )
-}
+    <div>
+      <Topbar />
+    </div>
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;

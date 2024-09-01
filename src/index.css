@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-losch-media h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #b01799;
+  border-radius: 2px;
+  position: relative;
+  top: 0.5rem;
+}

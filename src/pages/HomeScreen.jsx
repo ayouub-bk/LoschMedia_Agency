@@ -4,6 +4,7 @@ import Header from "../Components/sections/Header";
 import img1 from "../assets/imgs/aobut.jpg";
 import { Link } from "react-router-dom";
 import TestimonailsHome from "../Components/sections/TestimonailsHome";
+import ServicesHome from "../Components/sections/ServicesHome";
 
 const HomeScreen = () => {
   return (
@@ -48,6 +49,7 @@ const HomeScreen = () => {
           </div>
         </div>
         <TestimonailsHome />
+        <ServicesHome />
       </div>
     </>
   );

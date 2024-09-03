@@ -114,3 +114,37 @@ export const services = [
     ],
   },
 ];
+
+export const Offers = [
+  {
+    titel: "Consulting Service",
+    elemet: [
+      "Comprehensive Offer Audit",
+      "Evidence-Based Strategies",
+      "Value-Based Offer Creation",
+      "Boost Client Acquisition",
+      "Zero Cost, High Value",
+    ],
+    bonus: ["100M Offers Checklist"],
+  },
+  {
+    titel: "UCGE",
+    elemet: [
+      "Free First Client",
+      "Paid Ads Creative Enhancement",
+      "Extensive Outreach: +600 p/week",
+      "Appointment Setting & Closing",
+      "Email Marketing",
+      "Irresistible Offer Creation",
+      "total Marketing Strategy",
+      "Funnel Creation",
+      "Content Marketing Strategy",
+    ],
+    bonus: [
+      "Access Our $1,000 Client Retention Workshop",
+      "20+ viral graphic templates ",
+      "Top 8 Email  Industry-Specific Templates",
+      "Objection Handling Templates for Your Niche",
+    ],
+  },
+];

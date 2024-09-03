@@ -5,13 +5,14 @@ import img1 from "../assets/imgs/aobut.jpg";
 import { Link } from "react-router-dom";
 import TestimonailsHome from "../Components/sections/TestimonailsHome";
 import ServicesHome from "../Components/sections/ServicesHome";
+import OffersHome from "../Components/sections/OffersHome";
 
 const HomeScreen = () => {
   return (
     <>
       <Topbar />
       <Header />
-      <div className="flex flex-col w-screen items-center  ">
+      <div className="flex flex-col w-screen items-center desktop:p-10  ">
         <div className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 ">
           <h1 className="highlighted-title hidden  tablet:block  tablet:text-secondary text-[48px]   ">
             About LoshMedia
@@ -50,6 +51,7 @@ const HomeScreen = () => {
         </div>
         <TestimonailsHome />
         <ServicesHome />
+        <OffersHome />
       </div>
     </>
   );

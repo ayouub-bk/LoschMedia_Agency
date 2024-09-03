@@ -13,7 +13,7 @@ const ServicesHome = () => {
           const { title, icon, dettails } = service;
           return (
             <div
-              className={`shadow-md flex flex-col gap-2  ${
+              className={`shadow-md flex flex-col gap-2 p-2  ${
                 index == services.length - 1 ? `` : ``
               }   `}
             >
@@ -28,8 +28,7 @@ const ServicesHome = () => {
                     <div className="">
                       <p className="p-2">
                         {" "}
-                        <span className="font-bold">{name} </span> :{" "}
-                        {description}
+                        <span className="font-bold">{name} </span> {description}
                       </p>
                     </div>
                   );

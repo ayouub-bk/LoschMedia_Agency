@@ -22,12 +22,12 @@ const HomeScreen = () => {
 
           <div className="desktop:w-[1005px] desktop:h-[620px] w-screen h-screen  tablet:h-[531px] flex flex-col gap-6 p-6   pt-10 ">
             <div className="tablet:w-[60%]   h-[60%] tablet:self-end   ">
-              <img className="w-full h-full rounded-md " src={img1} alt="img" />
+              <img className="w-full h-full rounded-lg " src={img1} alt="img" />
             </div>
-            <div className="tablet:w-[60%] tablet:h-[60%] h-full rounded-lg p-4 bg-primary  shadow-md text-[16px] relative tablet:-mt-32 ">
-              <p className="desktop:leading-7">
-                <span className="text-secondary font-bold ">LoschMedia</span> is
-                a dynamic B2B marketing agency revolutionizing client
+            <div className="tablet:w-[60%] tablet:h-[60%] h-full rounded-lg  p-4  bg-primary text-center  shadow-md text-[16px] relative tablet:-mt-32   ">
+              <p className="desktop:leading-7 ">
+                <span className="text-secondary font-bold  ">LoschMedia</span>{" "}
+                is a dynamic B2B marketing agency revolutionizing client
                 acquisition. We specialize in transforming potential customers
                 into loyal advocates. Our data-driven approach, combined with
                 proven strategies informed by real-world business experts,
@@ -39,7 +39,7 @@ const HomeScreen = () => {
                 business together.
               </p>
               <Link
-                className="text-highlight absolute bottom-4 right-4"
+                className="text-highlight absolute bottom-0 right-2 text-sm desktop:text-lg "
                 to="About"
               >
                 Read more ...

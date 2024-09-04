@@ -1,5 +1,4 @@
 import React from "react";
-import Topbar from "../Components/sections/Topbar";
 import Header from "../Components/sections/Header";
 import img1 from "../assets/imgs/aobut.jpg";
 import { Link } from "react-router-dom";
@@ -11,7 +10,6 @@ import Faq from "../Components/sections/Faq";
 const HomeScreen = () => {
   return (
     <>
-      <Topbar />
       <Header />
       <div className="flex flex-col w-screen items-center desktop:p-10  ">
         <div className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 ">

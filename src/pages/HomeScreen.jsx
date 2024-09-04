@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import TestimonailsHome from "../Components/sections/TestimonailsHome";
 import ServicesHome from "../Components/sections/ServicesHome";
 import OffersHome from "../Components/sections/OffersHome";
+import Faq from "../Components/sections/Faq";
 
 const HomeScreen = () => {
   return (
@@ -52,6 +53,7 @@ const HomeScreen = () => {
         <TestimonailsHome />
         <ServicesHome />
         <OffersHome />
+        <Faq />
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Components/Ui/Button";
 import commas from "../assets/icons/icons8-comma-100.png";
+import { SpecialData } from "../data";
 
 const About = () => {
   return (
@@ -40,7 +41,35 @@ const About = () => {
         <span className="opacity-0">.</span>
       </div>
 
-      <div className="tablet:p-8 desktop:p-14 p-4  "></div>
+      <div className="tablet:p-8 desktop:p-20 p-4 flex flex-col items-center   ">
+        <section className="w-full">
+          <h1 className="highlighted-title font-bold text-center mb-20 text-[48px] text-secondary    ">
+            {" "}
+            Why we are special ?{" "}
+          </h1>
+          <div className="flex flex-col gap-6  ">
+            {SpecialData.map((special, index) => {
+              const { icon, title, others, middle } = special;
+              return (
+                <div className="flex justify-between  p-2 pb-4 items-center border-b-2 border-secondary ">
+                  <div className="flex gap-2 ">
+                    <img src={icon} height="40px" width="40px" alt="icon" />
+                    <h1 className="text-center  text-[16px] tablet:text-[25px] text-bold ">
+                      {" "}
+                      {title}
+                    </h1>
+                  </div>
+                  <div className="w-[20%] text-center ">
+                    <h1 className="text-[14px] tablet:text-[20px] ">
+                      {others}
+                    </h1>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </div>
     </>
   );
 };

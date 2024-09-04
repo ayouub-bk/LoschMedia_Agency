@@ -7,6 +7,15 @@ import icon6 from "../src/assets/icons/multi-agent-system.png";
 import icon7 from "../src/assets/icons/filter.png";
 import icon8 from "../src/assets/icons/content.png";
 import icon9 from "../src/assets/icons/reach.png";
+// -------------------------------
+import Icon1 from "../src/assets/icons/save-money.png";
+import Icon2 from "../src/assets/icons/customers.png";
+import Icon3 from "../src/assets/icons/risk-management.png";
+import Icon4 from "../src/assets/icons/methodology.png";
+import Icon5 from "../src/assets/icons/customize.png";
+import Icon6 from "../src/assets/icons/target.png";
+import Icon7 from "../src/assets/icons/expertise.png";
+
 export const services = [
   {
     title: "Email marketing",
@@ -190,5 +199,53 @@ export const FaqData = [
       "4. Transparent Process: We keep the process transparent and straightforward. You will know exactly what to expect and how payments are linked to the results we achieve. Our goal is to build trust and ensure you see the value of our services before any payment is made.",
       "By focusing solely on delivering paying clients and linking our compensation to your success, we ensure that our services provide real value and that you only pay for the results you receive.",
     ],
+  },
+];
+export const SpecialData = [
+  {
+    icon: Icon1,
+    title: "Payment Model",
+    others: "Upfront retainer or monthly fees.",
+    middle: "Pay only for results (pay per client).",
+  },
+  {
+    icon: Icon2,
+    title: "Client Type",
+    others: "Provide leads that might be interested or just potential clients.",
+    middle: "Deliver loyal, paying clients ready to do business.",
+  },
+  {
+    icon: Icon3,
+    title: "Risk Assurance",
+    others: "you pay regardless of outcome.",
+    middle: "No payment unless results are delivered.",
+  },
+  {
+    icon: Icon4,
+    title: "Methodology",
+    others:
+      "Often rely on a single method (e.g., only paid ads or content marketing).",
+    middle:
+      "Comprehensive approach using multiple strategies (content, paid ads, funnels, etc.).",
+  },
+  {
+    icon: Icon5,
+    title: "Customization",
+    others: "One-size-fits-all approach or standardized methods.",
+    middle:
+      "Tailored strategies based on world-leading expert insights and best practices.",
+  },
+  {
+    icon: Icon6,
+    title: "Service Scope",
+    others: "Limited to specific services without full integration.",
+    middle: "Full-service solution: Offers, funnels, referral systems, etc.",
+  },
+  {
+    icon: Icon7,
+    title: "Expertise Integration",
+    others: "May use generic strategies without deep expert integration.",
+    middle:
+      "Utilizes insights from top experts like Alex Hormozi, Russell Brunson, Grant Cardone, and Jeremy Miner",
   },
 ];

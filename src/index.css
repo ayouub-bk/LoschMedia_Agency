@@ -15,12 +15,10 @@
 
 .faq-answer {
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 .faq-open {
-  max-height: 200px; /* Adjust based on content */
   opacity: 1;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }

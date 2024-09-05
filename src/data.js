@@ -139,15 +139,91 @@ export const Offers = [
   {
     titel: "UCGE",
     elemet: [
-      "Free First Client",
-      "Paid Ads Creative Enhancement",
-      "Extensive Outreach: +600 p/week",
-      "Appointment Setting & Closing",
-      "Email Marketing",
-      "Irresistible Offer Creation",
-      "total Marketing Strategy",
-      "Funnel Creation",
-      "Content Marketing Strategy",
+      {
+        subtitle: "Free First Client",
+        name: "Guaranteed Success",
+        description: [
+          "Receive your first client at no cost, ensuring immediate value and zero risk.",
+        ],
+      },
+      {
+        subtitle: "Referral System Build",
+        name: "",
+        description: [
+          "Maximize Client Acquisition: We will build a referral system that continuously generates new clients, maximizing your monthly client acquisition.",
+        ],
+      },
+      {
+        subtitle: "Extensive Outreach: +600 p/week",
+        name: "600+ outreach efforts per week",
+        description: [
+          "We conduct 400+ cold emails",
+          "100 cold calls",
+          "100 Instagram & Facebook DMs",
+        ],
+      },
+      {
+        subtitle: "Appointment Setting & Closing",
+        name: "",
+        description: [
+          "Expert Appointment Setters: Our team handles all responses and calls to set appointments. (these are the ones who cold call and outreach)",
+          "Professional Closers: Skilled negotiators manage and close deals on your behalf.",
+        ],
+      },
+      {
+        subtitle: "Email Marketing",
+        name: "",
+        description: [
+          "Triple Your Email List: We aim to triple your email list minimum.",
+          "12-Week Newsletter Plan: Create and implement a comprehensive email newsletter plan.",
+        ],
+      },
+      {
+        subtitle: "Irresistible Offer Creation",
+        name: "",
+        description: [
+          "Hormozi Method: We craft so compelling that clients can’t say no, boosting your client acquisition and increasing your Lifetime Gross Profit (LTGP) per client.",
+        ],
+      },
+      {
+        subtitle: "Comprehensive Marketing Strategy",
+        name: "",
+        description: [
+          "Tailored Approach: We develop a unique marketing strategy specifically for your business, ensuring you stand out in your industry.",
+        ],
+      },
+      {
+        subtitle: "Funnel Creation",
+        name: "",
+        description: [
+          "Brunson Method: Utilizing Russell Brunson’s proven strategies, we build a 2024 sales funnel designed to maximize conversions.",
+        ],
+      },
+      {
+        subtitle: "Content Marketing Strategy",
+        name: "Content Plan for 12 Weeks",
+        description: [
+          "Viral Content Creation: Receive 7 pieces of high-quality, viral content produced by our expert team.",
+          "10 graphics: High-quality, engaging content to fuel your marketing efforts.",
+        ],
+      },
+    ],
+    Guarunti: [
+      {
+        title: "Pay Only for Signed Clients:",
+        dettail:
+          "You pay only for clients who actually sign with you, not for potential leads or prospects. We focus on delivering loyal consumers who are ready to do business.",
+      },
+      {
+        title: "No Payment for Unsuccessful Outcomes:",
+        dettail:
+          "If you don’t make money from our clients, you don’t pay. We only get paid when you get real clients and tangible results.",
+      },
+      {
+        title: "True Value Delivery:",
+        dettail:
+          "Unlike other agencies that charge for potential results, we ensure that you only invest in clients who generate revenue for your business.",
+      },
     ],
     bonus: [
       "Access Our $1,000 Client Retention Workshop",

@@ -55,23 +55,61 @@ const Pricing = () => {
                       </div>
                       <div className="text-[16px]">
                         <p className="font-semibold">{i.name}</p>
-                        {i.description.map((descrp) => {
-                          return <p className="ml-2 mt-2 ">{descrp}</p>;
-                        })}
+                        <ul className="p-2">
+                          {i.description.map((descrp) => {
+                            return (
+                              <li
+                                className={` ml-4 mb-2  ${
+                                  descrp !== "" ? `list-disc` : ``
+                                }`}
+                              >
+                                {descrp}
+                              </li>
+                            );
+                          })}
+                        </ul>
                       </div>
                     </div>
                   );
                 })}
               </div>
+              <div>
+                {offer.Guarunti && (
+                  <h2 className={`text-[25px] font-bold mb-2 text-secondary `}>
+                    {" "}
+                    Guarunti{" "}
+                  </h2>
+                )}
+                {offer.Guarunti?.map((G) => {
+                  const { title, dettail } = G;
+                  return (
+                    <div className="flex flex-col gap-4  ">
+                      <img src="" alt="" />
+                      <div>
+                        <h2 className="font-semibold">{title}</h2>
+                        <p className="mt-2">{dettail}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
               <div className="min-h-[230px] flex flex-col gap-4  ">
-                <h2 className={`text-[25px] font-bold `}> Bonus </h2>
+                <h2
+                  className={`text-[25px] font-bold ${
+                    index == 0 ? `` : `text-highlight`
+                  } `}
+                >
+                  {" "}
+                  Bonus{" "}
+                </h2>
                 <div className={`flex flex-col itmes-center gap-2   `}>
                   {bonus.map((b) => {
                     return (
                       <div>
                         <div>
                           <img src="" alt="" />
-                          <p>{b.name}</p>
+                          <p className="font-semibold">{b.name}</p>
                         </div>
                         <ul className="flex flex-col mt-2 p-2">
                           {b.description &&

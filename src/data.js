@@ -254,10 +254,25 @@ export const Offers = [
       },
     ],
     bonus: [
-      "Access Our $1,000 Client Retention Workshop",
-      "20+ viral graphic templates ",
-      "Top 8 Email  Industry-Specific Templates",
-      "Objection Handling Templates for Your Niche",
+      {
+        name: "Access to our Client Retention Workshop we charge 1000 USD",
+        description: [""],
+      },
+      {
+        name: "20+ viral graphic templates ",
+        description: [""],
+      },
+      {
+        name: "Free Access to AI Tools",
+        description: [
+          "$500+ Value: Gain access to top AI tools that support your social media growth throughout our partnership.",
+          "AI Prompts Guide Book: 101 AI prompts tailored to any niche to enhance your content creation.",
+        ],
+      },
+      {
+        name: "Objection handling notion templates for the most repeated objections in your niche",
+        description: [""],
+      },
     ],
   },
 ];

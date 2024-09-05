@@ -1,5 +1,6 @@
 import React from "react";
 import { Offers } from "../data";
+import Button from "../Components/Ui/Button";
 
 const Pricing = () => {
   return (
@@ -62,22 +63,22 @@ const Pricing = () => {
                   {bonus.map((b) => {
                     return (
                       <div>
-                        <img src="" alt="" />
-                        <p>{b.name}</p>
+                        <div>
+                          <img src="" alt="" />
+                          <p>{b.name}</p>
+                        </div>
+                        <div className="">
+                          {b?.description?.map((d) => {
+                            return <p className="ml-2  ">.{d}</p>;
+                          })}
+                        </div>
                       </div>
                     );
                   })}
                 </div>
               </div>
-              <div className=" flex justify-between  justify-self-end	  ">
-                <button className="p-4 bg-highlight  rounded-xl">
-                  Get started
-                </button>
-                <button className="p-4 bg-highlight  rounded-xl">
-                  {" "}
-                  More Dettials{" "}
-                </button>
-              </div>
+
+              <Button />
             </div>
           );
         })}

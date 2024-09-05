@@ -13,7 +13,7 @@ const Topbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/Offers">Offers</Link>
+            <Link to="/Pricing">Offers</Link>
           </li>
           <li>
             <Link to="/About">About</Link>

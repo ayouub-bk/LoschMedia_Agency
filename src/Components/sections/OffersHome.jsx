@@ -44,7 +44,7 @@ const OffersHome = () => {
                   return (
                     <div className="">
                       <img src="" alt="" />
-                      <p>{i}</p>
+                      <p>{i.subtitle}</p>
                     </div>
                   );
                 })}
@@ -56,7 +56,7 @@ const OffersHome = () => {
                     return (
                       <div>
                         <img src="" alt="" />
-                        <p>{b}</p>
+                        <p>{b.name}</p>
                       </div>
                     );
                   })}

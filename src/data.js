@@ -135,7 +135,7 @@ export const Offers = [
       },
       {
         subtitle: "Evidence-Based Strategies",
-        name: "Data-Driven Insights: Our recommendations are based on data, not opinions, ensuring you get actionable and effective strategies.",
+        name: "Data-Driven Insights : Our recommendations are based on data, not opinions, ensuring you get actionable and effective strategies.",
         description: [
           "Proven Techniques: Our strategies are based on Alex Hormozi’s “100M Offers,” tested and successful across various industries, ensuring that our methods work for you.",
         ],
@@ -150,10 +150,6 @@ export const Offers = [
         name: "Experience the value of our consulting service without any upfront cost. All we ask in return is a testimonial if you’re satisfied.",
         description: [""],
       },
-
-      // "Value-Based Offer Creation",
-      // "Boost Client Acquisition",
-      // "Zero Cost, High Value",
     ],
     bonus: [
       {
@@ -260,7 +256,7 @@ export const Offers = [
       },
       {
         name: "20+ viral graphic templates ",
-        description: [""],
+        description: "",
       },
       {
         name: "Free Access to AI Tools",

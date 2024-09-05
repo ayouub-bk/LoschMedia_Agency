@@ -19,7 +19,7 @@ const Pricing = () => {
               } `}
             >
               <div className="flex justify-between   ">
-                <h3>{titel}</h3>
+                <h3 className="">{titel}</h3>
                 {index == 1 && (
                   <div className="bg-highlight py-[6px] px-[8px] rounded-lg text-primary  text-[13px]  ">
                     Guaranteed
@@ -43,14 +43,20 @@ const Pricing = () => {
                 {elemet.map((i) => {
                   return (
                     <div className="">
-                      <div>
+                      <div
+                        className={` ${
+                          index === 0 ? `text-black ` : `text-secondary`
+                        }`}
+                      >
                         <img src="" alt="" />
-                        <p>{i.subtitle}</p>
+                        <p className="text-[14px] mb-2 font-bold -tracking-tighter">
+                          {i.subtitle}
+                        </p>
                       </div>
-                      <div>
-                        <p>{i.name}</p>
+                      <div className="text-[16px]">
+                        <p className="font-semibold">{i.name}</p>
                         {i.description.map((descrp) => {
-                          return <p className="ml-2">. {descrp}</p>;
+                          return <p className="ml-2 mt-2 ">{descrp}</p>;
                         })}
                       </div>
                     </div>
@@ -67,11 +73,20 @@ const Pricing = () => {
                           <img src="" alt="" />
                           <p>{b.name}</p>
                         </div>
-                        <div className="">
-                          {b?.description?.map((d) => {
-                            return <p className="ml-2  ">.{d}</p>;
-                          })}
-                        </div>
+                        <ul className="flex flex-col mt-2 p-2">
+                          {b.description &&
+                            b.description.map((d) => {
+                              return (
+                                <li
+                                  className={` ml-4 ${
+                                    d !== "" ? `list-disc` : ``
+                                  }`}
+                                >
+                                  {d}
+                                </li>
+                              );
+                            })}
+                        </ul>
                       </div>
                     );
                   })}

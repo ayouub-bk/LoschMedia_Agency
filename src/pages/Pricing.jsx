@@ -1,21 +1,26 @@
 import React from "react";
 import { Offers } from "../data";
 import Button from "../Components/Ui/Button";
+import checkIcon from "../assets/icons/circle-check-solid.svg";
 
 const Pricing = () => {
   return (
     <div className="desktop:p-20 p-10 flex flex-col justify-center items-center ">
-      <div className="desktop:mb-20 mb-10 text-secondary text-center ">
-        <h1 className="text-[48px] mb-2">Choose a Plan</h1>
-        <h3 className="text-[39px] font-light ">to get started</h3>
+      <div className="desktop:p-32 p-28   text-secondary text-center ">
+        <h1 className="text-[48px] mb-2 font-bold ">Choose a Plan</h1>
+        <h3 className="text-[39px] font-light -tracking-tighter ">
+          to get started
+        </h3>
       </div>
-      <div className="flex  flex-col   gap-20 desktop:w-[700px] w-full  ">
+      <div className="flex  flex-col   gap-28 tablet:w-[700px] w-full  ">
         {Offers.map((offer, index) => {
           const { titel, elemet, bonus } = offer;
           return (
             <div
-              className={`flex flex-col gap-6  p-6 rounded-2xl border-[1px] border-secondary  ${
-                index == 0 ? `bg-secondary text-primary ` : ``
+              className={`flex flex-col gap-6  p-6 rounded-2xl border-[2px] border-secondary  ${
+                index == 0
+                  ? `bg-secondary text-primary `
+                  : `border-t-[6px] border-t-highlight `
               } `}
             >
               <div className="flex justify-between   ">
@@ -44,15 +49,18 @@ const Pricing = () => {
                   return (
                     <div className="">
                       <div
-                        className={` ${
+                        className={` flex gap-4 intems-center   ${
                           index === 0 ? `text-black ` : `text-secondary`
                         }`}
                       >
-                        <i
-                          class="fa-solid fa-circle-check"
-                          style="color: #02223b;"
-                        ></i>
-                        <p className="text-[14px] mb-2 font-bold -tracking-tighter">
+                        <img
+                          className=""
+                          height="24px"
+                          width="24px"
+                          src={checkIcon}
+                          alt="icon"
+                        />
+                        <p className="text-[16px] py-2 font-bold -tracking-tighter">
                           {i.subtitle}
                         </p>
                       </div>
@@ -62,7 +70,7 @@ const Pricing = () => {
                           {i.description.map((descrp) => {
                             return (
                               <li
-                                className={` ml-4 mb-2  ${
+                                className={` ml-4 my-2  ${
                                   descrp !== "" ? `list-disc` : ``
                                 }`}
                               >
@@ -140,8 +148,11 @@ const Pricing = () => {
                   })}
                 </div>
               </div>
-
-              <Button />
+              <div className="w-full">
+                <button className="bg-highlight rounded-lg w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-75   p-2">
+                  Book a Call
+                </button>
+              </div>
             </div>
           );
         })}

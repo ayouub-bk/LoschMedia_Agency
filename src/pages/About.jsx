@@ -42,7 +42,7 @@ const About = () => {
         <span className="opacity-0">.</span>
       </div>
 
-      <div className="tablet:p-8 desktop:p-20 p-4 flex flex-col items-center   ">
+      <div className="tablet:p-8 desktop:p-20 p-4 flex flex-col items-center mb-10   ">
         <section className="w-full ">
           <h1 className="highlighted-title font-bold text-center mb-[34vh] text-[48px] text-secondary    ">
             {" "}
@@ -68,7 +68,7 @@ const About = () => {
                 </div>
               );
             })}
-            <div className="absolute flex flex-col items-center p-2    bottom-0  -top-30 right-[35%] bg-primary w-[30%] gap-6 shadow-lg rounded-md  ">
+            <div className="absolute flex flex-col items-center p-2   tablet:bottom-0 -bottom-0  -top-30 right-[35%] bg-primary w-[30%] gap-6 shadow-lg rounded-md  ">
               <img
                 className="mb-14"
                 src={Logo}
@@ -80,7 +80,7 @@ const About = () => {
                 const { middle } = mid;
                 return (
                   <div className="h-[120px] flex justify-center items-center  p-2  ">
-                    <h6 className="text-center text-[16px] font-bold tablet:text-[20px] text-secondary ">
+                    <h6 className="text-center text-[14px] font-bold tablet:text-[20px] text-secondary ">
                       {middle}
                     </h6>
                   </div>

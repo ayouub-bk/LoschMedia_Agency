@@ -3,6 +3,7 @@ import Button from "../Components/Ui/Button";
 import commas from "../assets/icons/icons8-comma-100.png";
 import { SpecialData } from "../data";
 import Logo from "../assets/imgs/Logo.jpg";
+import Leadership from "../Components/sections/Leadership";
 
 const About = () => {
   return (
@@ -44,9 +45,8 @@ const About = () => {
 
       <div className="tablet:p-8 desktop:p-20 p-4 flex flex-col items-center mb-10   ">
         <section className="w-full ">
-          <h1 className="highlighted-title font-bold text-center mb-[34vh] text-[48px] text-secondary    ">
-            {" "}
-            Why we are special ?{" "}
+          <h1 className="highlighted-title font-bold text-center mb-80   text-[48px] text-secondary    ">
+            Why we are special ?
           </h1>
           <div className="flex flex-col gap-6 relative p-2 ">
             {SpecialData.map((special, index) => {
@@ -89,6 +89,7 @@ const About = () => {
             </div>
           </div>
         </section>
+        <Leadership />
       </div>
     </>
   );

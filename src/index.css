@@ -5,12 +5,13 @@
 .highlighted-title::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 90%;
   height: 5px;
   background: #b01799;
   border-radius: 3px;
   position: relative;
   top: 0.5rem;
+  left: 5%;
 }
 
 .faq-answer {

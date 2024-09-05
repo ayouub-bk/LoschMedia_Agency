@@ -7,7 +7,7 @@ const Leadership = () => {
       <h1 className="highlighted-title font-bold text-center mb-[15vh] text-[48px] text-secondary ">
         Leadership
       </h1>
-      <section className="grid   desktop:grid-cols-2 grid-cols-1  items-center gap-6 desktop:gap-0  ">
+      <section className="grid   desktop:grid-cols-2 grid-cols-1  items-center gap-10   ">
         <aside>
           <h1 className="text-[31px] text-center desktop:text-start mb-2 ">
             About the CEO
@@ -31,12 +31,17 @@ const Leadership = () => {
             service
           </p>
         </aside>
-        <div className="flex desktop:flex-row-reverse justify-center   ">
-          <img
-            className="h-[385px] w-[295px] tablet:w-[467px] tablet:h-[612px]  border-2  "
-            src={imageLeadership}
-            alt="CEO_IMAGE"
-          />
+        <div className="flex desktop:flex-row-reverse justify-center ">
+          <div className="relative  ">
+            <div className="z-40">
+              <img
+                className="h-[385px] w-[295px] tablet:w-[467px] tablet:h-[612px] z-10  "
+                src={imageLeadership}
+                alt="CEO_IMAGE"
+              />
+            </div>
+            <div className="   absolute -top-4 -left-2 w-full h-full after:content-[''] after:absolute after:top-0 after:-left-0 after:h-4 after:w-[calc(100%)] after:bg-secondary before:content-[''] before:absolute before:top-0 before:-left-2   before:h-[calc(100%)] before:w-[16px] before:bg-secondary  "></div>
+          </div>
         </div>
       </section>
     </div>

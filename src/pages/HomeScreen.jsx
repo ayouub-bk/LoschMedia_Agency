@@ -17,7 +17,7 @@ const HomeScreen = () => {
             About LoshMedia
           </h1>
 
-          <h1 className="highlighted-title  tablet:hidden w-[180px]    text-secondary text-[39px] ">
+          <h1 className="highlighted-title  tablet:hidden     text-secondary text-[39px] ">
             About us
           </h1>
 

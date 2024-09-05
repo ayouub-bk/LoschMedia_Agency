@@ -20,6 +20,9 @@ export default {
       tablet: "810px",
       desktop: "1200px",
     },
+    backgroundImage: {
+      "custom-radial": "radial-gradient(at center, #0150A7, #FFFFFF)",
+    },
   },
   plugins: [],
 };

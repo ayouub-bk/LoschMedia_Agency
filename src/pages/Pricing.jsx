@@ -48,7 +48,10 @@ const Pricing = () => {
                           index === 0 ? `text-black ` : `text-secondary`
                         }`}
                       >
-                        <img src="" alt="" />
+                        <i
+                          class="fa-solid fa-circle-check"
+                          style="color: #02223b;"
+                        ></i>
                         <p className="text-[14px] mb-2 font-bold -tracking-tighter">
                           {i.subtitle}
                         </p>

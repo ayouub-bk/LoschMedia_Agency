@@ -4,7 +4,7 @@ import Button from "../Ui/Button";
 const Header = () => {
   return (
     <>
-      <div className="bg-black/30 flex h-[100vh] flex-col gap-4  items-center justify-center  ">
+      <div className="bg-[url('./assets/imgs/StockImg.jpg')] flex h-[100vh] flex-col gap-4  items-center justify-center  ">
         <div className="flex flex-col items-center    px-8 text-center text-primary">
           <h1 className=" text-[39px] tablet:text-[61px]  ">
             <span className="hidden tablet:inline ">LoshMedia: Proven</span>

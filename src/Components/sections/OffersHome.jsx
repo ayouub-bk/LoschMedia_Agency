@@ -14,14 +14,14 @@ const OffersHome = () => {
           const { titel, elemet, bonus } = offer;
           return (
             <div
-              className={`flex flex-col gap-6  p-6 rounded-md border-[1px] border-secondary  ${
+              className={`flex flex-col gap-6  p-6 rounded-lg border-[1px] border-secondary  ${
                 index == 0 ? `bg-secondary text-primary ` : ``
               } `}
             >
               <div className="flex justify-between   ">
                 <h3>{titel}</h3>
                 {index == 1 && (
-                  <div className="bg-highlight py-[6px] px-[8px] rounded-lg text-primary  text-[13px]  ">
+                  <div className="bg-highlight py-[6px] px-[8px] rounded-2xl text-primary  text-[13px]  ">
                     Guaranteed
                   </div>
                 )}

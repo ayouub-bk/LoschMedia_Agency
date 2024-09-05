@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Offers } from "../../data";
 
+import checkIcon from "../../assets/icons/circle-check-solid.svg";
+
 const OffersHome = () => {
   const [hover, setHover] = useState(false);
-  let n = hover ? Offers[1].elemet.length : 5;
+  let n = hover ? Offers[1].elemet.length : 4;
   return (
     <div className=" flex flex-col items-center justify-center  gap-10 ">
-      <h1 className="highlighted-title  text-secondary tablet:text-[48px] text-[39px] ">
+      <h1 className="highlighted-title  text-secondary tablet:text-[48px] text-[39px] p-20 ">
         Offers
       </h1>
       <div className="grid tablet:grid-cols-2 gap-20 grid-cols-1 ">
@@ -26,7 +28,7 @@ const OffersHome = () => {
                   </div>
                 )}
               </div>
-              <div className=" relative    ">
+              <div className=" relative  ">
                 <h1 className="text-[54px] font-bold  ">Free</h1>
                 {index == 1 && (
                   <p className="text-highlight absolute text-[15px] font-medium -bottom-1 left-24   ">
@@ -42,20 +44,39 @@ const OffersHome = () => {
               >
                 {elemet.slice(0, n).map((i) => {
                   return (
-                    <div className="">
-                      <img src="" alt="" />
+                    <div className="flex  gap-4 items-center ">
+                      <img
+                        className=""
+                        height="24px"
+                        width="24px"
+                        src={checkIcon}
+                        alt="icon"
+                      />
                       <p>{i.subtitle}</p>
                     </div>
                   );
                 })}
               </div>
-              <div className="min-h-[230px] flex flex-col gap-4  ">
-                <h2 className={`text-[25px] font-bold `}> Bonus </h2>
+              <div className="min-h-[230px] flex flex-col gap-4 mt-10 ">
+                <h2
+                  className={`text-[25px] font-bold ${
+                    index != 0 ? `text-secondary` : ``
+                  } `}
+                >
+                  {" "}
+                  Bonus{" "}
+                </h2>
                 <div className={`flex flex-col itmes-center gap-2   `}>
                   {bonus.map((b) => {
                     return (
-                      <div>
-                        <img src="" alt="" />
+                      <div className="flex items-center  gap-4 ">
+                        <p
+                          className={` font-extrabold  text-[30px] ${
+                            index == 0 ? `text-primary` : `text-secondary`
+                          }`}
+                        >
+                          +
+                        </p>{" "}
                         <p>{b.name}</p>
                       </div>
                     );

@@ -11,7 +11,7 @@ const HomeScreen = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col w-screen items-center desktop:p-10  ">
+      <div className="flex flex-col w-screen items-center desktop:p-10 p-6  ">
         <div className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 ">
           <h1 className="highlighted-title hidden  tablet:block  tablet:text-secondary text-[48px]   ">
             About LoshMedia

@@ -1,9 +1,20 @@
 import React from "react";
+import Button from "../Components/Ui/Button";
 
 const Contact = () => {
   return (
-    <div className="bg-black text-white tablet:bg-green-500 desktop:bg-red-700 tablet:text-secondary desktop:text-highlight  ">
-      Co dntact
+    <div>
+      <header className=" bg-custom-radial py-20 px-10  flex justify-center items-center p-4 relative">
+        <div className="flex flex-col gap-[30px] items-center desktop:w-[1008px] text-center text-primary ">
+          <h1 className=" text-[31px] tablet:text-[61px] font-bold   ">
+            Let's Make it happen
+          </h1>
+          <p className=" text-[37px] tablet:text-[61px]  ">
+            Partner with Us and Watch Your Customers Grow!
+          </p>
+          <Button />
+        </div>
+      </header>
     </div>
   );
 };

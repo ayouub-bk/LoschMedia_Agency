@@ -14,12 +14,12 @@ const Pricing = () => {
           const { titel, elemet, bonus } = offer;
           return (
             <div
-              className={`flex flex-col gap-6  p-6 rounded-md border-[1px] border-secondary  ${
+              className={`flex flex-col gap-6  p-6 rounded-2xl border-[1px] border-secondary  ${
                 index == 0 ? `bg-secondary text-primary ` : ``
               } `}
             >
               <div className="flex justify-between   ">
-                <h3 className="">{titel}</h3>
+                <h3 className="font-semibold">{titel}</h3>
                 {index == 1 && (
                   <div className="bg-highlight py-[6px] px-[8px] rounded-lg text-primary  text-[13px]  ">
                     Guaranteed
@@ -75,7 +75,9 @@ const Pricing = () => {
               </div>
               <div>
                 {offer.Guarunti && (
-                  <h2 className={`text-[25px] font-bold mb-2 text-secondary `}>
+                  <h2
+                    className={`text-[25px] font-bold mb-2 ml-4 text-secondary `}
+                  >
                     {" "}
                     Guarunti{" "}
                   </h2>
@@ -83,12 +85,15 @@ const Pricing = () => {
                 {offer.Guarunti?.map((G) => {
                   const { title, dettail } = G;
                   return (
-                    <div className="flex flex-col gap-4  ">
-                      <img src="" alt="" />
-                      <div>
+                    <div className="flex flex-col  gap-4 ">
+                      <div className="flex items-center gap-4 ">
+                        <p className="text-[30px] text-secondary font-extrabold ">
+                          +
+                        </p>
                         <h2 className="font-semibold">{title}</h2>
-                        <p className="mt-2">{dettail}</p>
                       </div>
+
+                      <p className="mt-2">{dettail}</p>
                     </div>
                   );
                 })}
@@ -96,7 +101,7 @@ const Pricing = () => {
 
               <div className="min-h-[230px] flex flex-col gap-4  ">
                 <h2
-                  className={`text-[25px] font-bold ${
+                  className={` ml-4 text-[25px] font-bold ${
                     index == 0 ? `` : `text-highlight`
                   } `}
                 >
@@ -107,8 +112,10 @@ const Pricing = () => {
                   {bonus.map((b) => {
                     return (
                       <div>
-                        <div>
-                          <img src="" alt="" />
+                        <div className="flex gap-4 items-center  ">
+                          <p className="text-[30px] text-secondary  font-extrabold ">
+                            +
+                          </p>
                           <p className="font-semibold">{b.name}</p>
                         </div>
                         <ul className="flex flex-col mt-2 p-2">

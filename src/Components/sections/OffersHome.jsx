@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Offers } from "../../data";
 
 import checkIcon from "../../assets/icons/circle-check-solid.svg";
+import ButtonOffer from "../Ui/ButtonOffer";
 
 const OffersHome = () => {
   const [hover, setHover] = useState(false);
@@ -11,7 +12,7 @@ const OffersHome = () => {
       <h1 className="highlighted-title  text-secondary tablet:text-[48px] text-[39px] p-20 ">
         Offers
       </h1>
-      <div className="grid tablet:grid-cols-2 gap-20 grid-cols-1 ">
+      <div className="grid tablet:grid-cols-2  gap-10 grid-cols-1 ">
         {Offers.map((offer, index) => {
           const { titel, elemet, bonus } = offer;
           return (
@@ -57,7 +58,7 @@ const OffersHome = () => {
                   );
                 })}
               </div>
-              <div className="min-h-[230px] flex flex-col gap-4 mt-10 ">
+              <div className="min-h-[300px] flex flex-col gap-4 mt-10 ">
                 <h2
                   className={`text-[25px] font-bold ${
                     index != 0 ? `text-secondary` : ``
@@ -83,14 +84,17 @@ const OffersHome = () => {
                   })}
                 </div>
               </div>
-              <div className=" flex justify-between  justify-self-end	  ">
-                <button className="p-4 bg-highlight  rounded-xl">
-                  Get started
-                </button>
-                <button className="p-4 bg-highlight  rounded-xl">
-                  {" "}
-                  More Dettials{" "}
-                </button>
+              <div className=" flex justify-between ">
+                <ButtonOffer
+                  title="Get started"
+                  BgColor="highlight"
+                  Textcolor="primary"
+                />
+                <ButtonOffer
+                  title="More dettails"
+                  BgColor={index !== 0 ? "secondary" : "primary"}
+                  Textcolor={index !== 0 ? "primary" : "highlight"}
+                />
               </div>
             </div>
           );

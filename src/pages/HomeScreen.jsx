@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef, useEffect } from "react";
 import Header from "../Components/sections/Header";
 import img1 from "../assets/imgs/aobut.jpg";
 import { Link } from "react-router-dom";
@@ -8,11 +9,44 @@ import OffersHome from "../Components/sections/OffersHome";
 import Faq from "../Components/sections/Faq";
 
 const HomeScreen = () => {
+  const sectionRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fade-in-up");
+          } else {
+            entry.target.classList.remove("animate-fade-in-up");
+          }
+        });
+      },
+      { threshold: 0.2 } // Trigger when 20% of the section is visible
+    );
+
+    sectionRefs.current.forEach((section) => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sectionRefs.current.forEach((section) => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
   return (
     <>
       <Header />
-      <div className="flex flex-col w-screen items-center desktop:p-10 p-6  ">
-        <div className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 ">
+      <div className="flex flex-col w-screen items-center desktop:p-10 p-6 scroll-smooth ">
+        <div
+          ref={(el) => (sectionRefs.current[0] = el)}
+          className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 "
+        >
           <h1 className="highlighted-title hidden  tablet:block  tablet:text-secondary text-[48px]   ">
             About LoshMedia
           </h1>
@@ -48,10 +82,18 @@ const HomeScreen = () => {
             </div>
           </div>
         </div>
-        <TestimonailsHome />
-        <ServicesHome />
-        <OffersHome />
-        <Faq />
+        <div ref={(el) => (sectionRefs.current[1] = el)}>
+          <TestimonailsHome />
+        </div>
+        <div ref={(el) => (sectionRefs.current[2] = el)}>
+          <ServicesHome />
+        </div>
+        <div ref={(el) => (sectionRefs.current[3] = el)}>
+          <OffersHome />
+        </div>
+        <div ref={(el) => (sectionRefs.current[4] = el)}>
+          <Faq />
+        </div>
       </div>
     </>
   );

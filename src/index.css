@@ -27,3 +27,31 @@
   width: 40px;
   height: 40px;
 }
+
+/* animations :  */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px); /* Start further down */
+  }
+  60% {
+    opacity: 0.2;
+    transform: translateY(10px); /* Ease in the middle */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth cubic easing */
+}
+
+.scroll-snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}

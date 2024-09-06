@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Button from "../Ui/Button";
 import { Link } from "react-router-dom";
 import logo from "../../assets/imgs/Logo.jpg";
+import menu from "../../assets/icons/bars-solid.svg";
 const Topbar = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
     <>
-      <nav className=" flex justify-between items-center p-4 px-20 shadow-md ">
+      <nav className=" flex justify-between items-center p-4 tablet:px-20 px-10   shadow-md ">
         <Link to="/">
-          <img className="w-[154px] h-[54px]  " src={logo} alt="" />
+          <img className="w-[154px] h-[54px]" src={logo} alt="" />
         </Link>
         <ul className="gap-12 text-secondary  text-xl hidden desktop:flex ">
           <li>
@@ -28,27 +29,29 @@ const Topbar = () => {
           <Button />
         </div>
         <div className="tablet:hidden">
-          <button onClick={() => setToggleSideBar(true)}>==+</button>
+          <button onClick={() => setToggleSideBar(!toggleSideBar)}>
+            <img height="22" width="32" src={menu} alt="menu" />
+          </button>
         </div>
         {toggleSideBar && (
-          <div className=" p-10 bg-green-100 fixed top-0 right-0 bottom-0 left-0 tablet:hidden flex  items-center justify-center  ">
+          <div className=" z-10  bg-primary fixed inset-0 tablet:hidden flex  items-center justify-center  ">
             <button
-              className="fixed top-0 right-2"
-              onClick={() => setToggleSideBar(false)}
+              className="fixed top-6 right-6 text-secondary text-[30px] font-bold   "
+              onClick={() => setToggleSideBar(!toggleSideBar)}
             >
               X
             </button>
-            <ul className="flex flex-col gap-10  ">
-              <li>
+            <ul className="flex flex-col gap-10 text-[20px] font-bold w-full  text-center -tracking-tighter  ">
+              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
                 <Link to="/Offers">Offers</Link>
               </li>
-              <li>
+              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
                 <Link to="/About">About</Link>
               </li>
-              <li>
+              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
                 <Link to="/Contact">Contact</Link>
               </li>
             </ul>

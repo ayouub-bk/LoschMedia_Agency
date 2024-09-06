@@ -42,7 +42,7 @@ const HomeScreen = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col w-screen items-center desktop:p-10 p-6 scroll-smooth ">
+      <div className="flex flex-col w-screen items-center desktop:p-10 p-6 scroll-smooth   ">
         <div
           ref={(el) => (sectionRefs.current[0] = el)}
           className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 "

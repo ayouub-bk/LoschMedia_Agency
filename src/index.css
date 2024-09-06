@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Intel", sans-serif;
+}
 .highlighted-title::after {
   content: "";
   display: block;

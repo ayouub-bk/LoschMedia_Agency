@@ -11,6 +11,7 @@ const Topbar = () => {
         <Link to="/">
           <img className="w-[154px] h-[54px]" src={logo} alt="" />
         </Link>
+        {/* Desktop Links */}
         <ul className="gap-12 text-secondary  text-xl hidden desktop:flex ">
           <li>
             <Link to="/">Home</Link>
@@ -25,38 +26,63 @@ const Topbar = () => {
             <Link to="/Contact">Contact</Link>
           </li>
         </ul>
+
         <div className="hidden tablet:block">
           <Button />
         </div>
-        <div className="tablet:hidden">
+
+        <div
+          className={` tablet:hidden transform transition-transform duration-500 ${
+            toggleSideBar ? "rotate-180" : "rotate-0"
+          }`}
+        >
           <button onClick={() => setToggleSideBar(!toggleSideBar)}>
             <img height="22" width="32" src={menu} alt="menu" />
           </button>
         </div>
-        {toggleSideBar && (
-          <div className=" z-10  bg-primary fixed inset-0 tablet:hidden flex  items-center justify-center  ">
-            <button
-              className="fixed top-6 right-6 text-secondary text-[30px] font-bold   "
+
+        <div
+          className={`z-10 bg-primary fixed inset-0 tablet:hidden flex items-center justify-center transform transition-transform duration-500 ease-in-out ${
+            toggleSideBar ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <button
+            className={`fixed top-6 right-6 text-secondary text-[30px] font-bold transform transition-transform duration-500 ${
+              toggleSideBar ? "rotate-180" : "rotate-0"
+            } `}
+            onClick={() => setToggleSideBar(!toggleSideBar)}
+          >
+            X
+          </button>
+          <ul
+            className={`flex flex-col gap-10 text-[20px] font-bold w-full  text-center -tracking-tighter `}
+          >
+            <li
               onClick={() => setToggleSideBar(!toggleSideBar)}
+              className="border-b-2 border-b-secondary pb-4 text-secondary"
             >
-              X
-            </button>
-            <ul className="flex flex-col gap-10 text-[20px] font-bold w-full  text-center -tracking-tighter  ">
-              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
-                <Link to="/Offers">Offers</Link>
-              </li>
-              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
-                <Link to="/About">About</Link>
-              </li>
-              <li className="border-b-2 border-b-secondary pb-4 text-secondary">
-                <Link to="/Contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-        )}
+              <Link to="/">Home</Link>
+            </li>
+            <li
+              onClick={() => setToggleSideBar(!toggleSideBar)}
+              className="border-b-2 border-b-secondary pb-4 text-secondary"
+            >
+              <Link to="/Pricing">Offers</Link>
+            </li>
+            <li
+              onClick={() => setToggleSideBar(!toggleSideBar)}
+              className="border-b-2 border-b-secondary pb-4 text-secondary"
+            >
+              <Link to="/About">About</Link>
+            </li>
+            <li
+              onClick={() => setToggleSideBar(!toggleSideBar)}
+              className="border-b-2 border-b-secondary pb-4 text-secondary"
+            >
+              <Link to="/Contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );

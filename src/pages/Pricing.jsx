@@ -6,8 +6,8 @@ import checkIcon from "../assets/icons/circle-check-solid.svg";
 const Pricing = () => {
   return (
     <div className="desktop:p-20 p-10 flex flex-col justify-center items-center ">
-      <div className="desktop:p-32 p-28   text-secondary text-center ">
-        <h1 className="text-[48px] mb-2 font-bold ">Choose a Plan</h1>
+      <div className="desktop:p-20 p-12   text-secondary text-center  ">
+        <h1 className="text-[48px] mb-2 font-bold   ">Choose a Plan</h1>
         <h3 className="text-[39px] font-light -tracking-tighter ">
           to get started
         </h3>
@@ -149,8 +149,8 @@ const Pricing = () => {
                 </div>
               </div>
               <div className="w-full">
-                <button className="bg-highlight rounded-lg w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-75   p-2">
-                  Book a Call
+                <button className="bg-highlight rounded-lg w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-[.5s]   p-2">
+                  Get started
                 </button>
               </div>
             </div>

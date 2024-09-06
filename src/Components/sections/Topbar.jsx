@@ -6,8 +6,10 @@ const Topbar = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
     <>
-      <nav className=" flex justify-between items-center p-4 px-20">
-        <img className="w-[154px] h-[54px]  " src={logo} alt="" />
+      <nav className=" flex justify-between items-center p-4 px-20 shadow-md ">
+        <Link to="/">
+          <img className="w-[154px] h-[54px]  " src={logo} alt="" />
+        </Link>
         <ul className="gap-12 text-secondary  text-xl hidden desktop:flex ">
           <li>
             <Link to="/">Home</Link>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import insta from "../../assets/icons/instagram1.png";
 import linkeIn from "../../assets/icons/linkedin1.png";
 import youtub from "../../assets/icons/youtube.png";
+import ButtonOffer from "../Ui/ButtonOffer";
 const Footer = () => {
   return (
     <>
@@ -21,34 +22,42 @@ const Footer = () => {
             Book a meeting now{" "}
           </h1>
           <div className="flex justify-center gap-8 ">
-            <button className="p-2 bg-primary  text-secondary  rounded-lg  ">
-              Book a Call{" "}
-            </button>
-            <button className="p-2 bg-primary  text-secondary  rounded-lg  ">
-              More Dettails
-            </button>
+            <ButtonOffer
+              BgColor="highlight"
+              Textcolor="primary"
+              title="Book a Call"
+            />
+            <ButtonOffer
+              BgColor="primary"
+              Textcolor="black"
+              title="More Details"
+            />
           </div>
         </div>
         <div className="flex tablet:gap-44 gap-20">
           <div>
-            <h2 className="text-primary text-[25px]">Links</h2>
+            <h2 className="text-primary text-[25px] mb-2 -tracking-tighter font-semibold  ">
+              Links
+            </h2>
             <ul className="text-primary text-[23px] flex flex-col gap-2 ">
               <li>
-                <Link>Services</Link>
+                <Link to="#Services">Services</Link>
               </li>
               <li>
-                <Link>Offers</Link>
+                <Link to="Pricing">Offers</Link>
               </li>
               <li>
-                <Link>About</Link>
+                <Link to="About">About</Link>
               </li>
               <li>
-                <Link>Contact</Link>
+                <Link to="Contact">Contact</Link>
               </li>
             </ul>
           </div>
           <div>
-            <h2 className=" text-primary text-[25px] mb-2 ">Social Links</h2>
+            <h2 className=" text-primary text-[25px] mb-4  -tracking-tighter font-semibold ">
+              Social Links
+            </h2>
             <ul className="social-links flex  flex-col  gap-4 items-center ">
               <li>
                 <Link>

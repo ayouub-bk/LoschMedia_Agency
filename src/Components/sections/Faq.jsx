@@ -17,13 +17,15 @@ const Faq = () => {
             return (
               <div className="p-4 shadow-md" key={index}>
                 <div
-                  className="flex items-center  cursor-pointer"
+                  className="flex gap-4  cursor-pointer"
                   onClick={() => toggleIndex(index)}
                 >
                   <button className="text-[28px] text-highlight w-[5%]">
                     {toggle === index ? "-" : "+"}
                   </button>
-                  <h2 className="text-secondary text-[22px]">{question}</h2>
+                  <h2 className="text-secondary text-[22px] align-text-top ">
+                    {question}
+                  </h2>
                 </div>
                 <div
                   className={`${toggle === index ? "faq-open" : "faq-answer"}`}

@@ -17,7 +17,7 @@ const Calendly = () => {
   return (
     <div
       className="calendly-inline-widget"
-      data-url="https://calendly.com/ayoubdev1k?hide_gdpr_banner=1"
+      data-url="https://calendly.com/kchahid0717"
       style={{ minWidth: "320px", height: "700px" }}
     ></div>
   );

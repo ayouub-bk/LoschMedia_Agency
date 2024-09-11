@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Components/Ui/Button";
 import contactImg from "../assets/icons/Calendly-Demand-Gen-2.png";
+import Calendly from "../Components/sections/Calendly";
 const Contact = () => {
   return (
     <div className="">
@@ -15,9 +16,7 @@ const Contact = () => {
           <Button />
         </div>
       </header>
-      <div className=" p-10  desktop:px-20   h-['730px'] w-['full']">
-        <img className="w-full h-full " src={contactImg} alt="img" />
-      </div>
+      <Calendly />
     </div>
   );
 };

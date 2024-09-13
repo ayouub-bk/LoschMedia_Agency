@@ -9,44 +9,11 @@ import OffersHome from "../Components/sections/OffersHome";
 import Faq from "../Components/sections/Faq";
 
 const HomeScreen = () => {
-  const sectionRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in-up");
-          } else {
-            entry.target.classList.remove("animate-fade-in-up");
-          }
-        });
-      },
-      { threshold: 0.2 } // Trigger when 20% of the section is visible
-    );
-
-    sectionRefs.current.forEach((section) => {
-      if (section) {
-        observer.observe(section);
-      }
-    });
-
-    return () => {
-      sectionRefs.current.forEach((section) => {
-        if (section) {
-          observer.unobserve(section);
-        }
-      });
-    };
-  }, []);
   return (
     <>
       <Header />
-      <div className="flex flex-col w-screen items-center desktop:p-10 p-6 scroll-smooth   ">
-        <div
-          ref={(el) => (sectionRefs.current[0] = el)}
-          className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 "
-        >
+      <div className="flex flex-col max-w-[100%] items-center desktop:p-10 p-6   ">
+        <div className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 ">
           <h1 className="highlighted-title hidden  tablet:block  tablet:text-secondary text-[48px]   ">
             About LoshMedia
           </h1>
@@ -60,21 +27,21 @@ const HomeScreen = () => {
               <img className="w-full h-full rounded-lg " src={img1} alt="img" />
             </div>
             <div className="tablet:w-[60%] tablet:h-[60%] h-full rounded-lg  p-4  bg-primary text-center  shadow-md text-[16px] relative tablet:-mt-32   ">
-              <p className="desktop:leading-7 ">
+              <p className="desktop:leading-7  text-center ">
                 <span className="text-secondary font-bold  ">LoschMedia</span>{" "}
-                is a dynamic B2B marketing agency revolutionizing client
-                acquisition. We specialize in transforming potential customers
-                into loyal advocates. Our data-driven approach, combined with
-                proven strategies informed by real-world business experts,
-                delivers exceptional results. By harnessing the power of our
-                Ultimate Client Growth Engine, we guarantee to propel your
-                business to new heights. Discover how LoschMedia can be your
-                partner in achieving unparalleled success. Ready to experience
-                the difference? Let's discover how we can revolutionize your
-                business together.
+                Losch Media is a customer acquisition agency that specializes in
+                providing guaranteed results for B2B businesses. Through
+                world-class marketing and sales strategies, we turn leads into
+                loyal, paying customers. Offering a comprehensive "done-for-you"
+                program, we only get paid for the clients we bring
+                in—eliminating any risk for our clients. Powered by proven
+                techniques from industry leaders like Russell Brunson and Alex
+                Hormozi, Losch Media focuses on data-driven methods to ensure
+                real business growth, all while delivering exceptional value and
+                unmatched expertise
               </p>
               <Link
-                className="text-highlight absolute bottom-0 right-2 text-sm desktop:text-lg "
+                className="text-highlight absolute bottom-0 desktop:bottom-2  right-2 text-sm desktop:text-lg "
                 to="About"
               >
                 Read more ...
@@ -82,16 +49,16 @@ const HomeScreen = () => {
             </div>
           </div>
         </div>
-        <div ref={(el) => (sectionRefs.current[1] = el)}>
+        <div>
           <TestimonailsHome />
         </div>
-        <div ref={(el) => (sectionRefs.current[2] = el)}>
+        <div>
           <ServicesHome />
         </div>
-        <div ref={(el) => (sectionRefs.current[3] = el)}>
+        <div>
           <OffersHome />
         </div>
-        <div ref={(el) => (sectionRefs.current[4] = el)}>
+        <div>
           <Faq />
         </div>
       </div>

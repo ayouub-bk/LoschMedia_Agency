@@ -3,6 +3,7 @@ import video from "../../assets/vid/1st-testimonial.mp4";
 import { Link } from "react-router-dom";
 import commmas from "../../assets/icons/commas1.png";
 import profile from "../../assets/imgs/StockImg.jpg";
+import more from "../../assets/icons/more1.png";
 
 const TestimonailsHome = () => {
   return (
@@ -15,13 +16,10 @@ const TestimonailsHome = () => {
           <video className="h-full" src={video} width="100%" controls></video>
         </div>
         <div className="py-[10px] px-[22px]  shadow-md relative w-full desktop:w-[55%] flex flex-col justify-between  gap-2">
-          <img
-            className="absolut top-2 left-2"
-            src={commmas}
-            height="43px"
-            width="43"
-            alt=""
-          />
+          <div className="flex justify-between px-4  ">
+            <img className="" src={commmas} height="43px" width="43" alt="" />
+            <img height="43px" width="43" src={more} alt="..." />
+          </div>
           <p className="text-[20px]">
             I want to thank LoshMedia, especially Shahid, for helping me realize
             my agency's mistake. He helped me create a new offer based on

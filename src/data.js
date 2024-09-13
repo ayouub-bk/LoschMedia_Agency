@@ -126,41 +126,6 @@ export const services = [
 
 export const Offers = [
   {
-    titel: "Consulting Service",
-    elemet: [
-      {
-        subtitle: "Comprehensive Offer Audit",
-        name: "We’ll thoroughly analyze your current offers, identify hidden gaps, and highlight specific areas for improvement.",
-        description: [""],
-      },
-      {
-        subtitle: "Evidence-Based Strategies",
-        name: "Data-Driven Insights : Our recommendations are based on data, not opinions, ensuring you get actionable and effective strategies.",
-        description: [
-          "Proven Techniques: Our strategies are based on Alex Hormozi’s “100M Offers,” tested and successful across various industries, ensuring that our methods work for you.",
-        ],
-      },
-      {
-        subtitle: "Boost Client Acquisition",
-        name: "Learn how to craft offers that clients can’t say no to, increasing your Lifetime Gross Profit (LTGP) per client.",
-        description: [""],
-      },
-      {
-        subtitle: "Zero Cost, High Value",
-        name: "Experience the value of our consulting service without any upfront cost. All we ask in return is a testimonial if you’re satisfied.",
-        description: [""],
-      },
-    ],
-    bonus: [
-      {
-        name: "100M Offers Checklist",
-        description: [
-          " A comprehensive resume of Alex Hormozi’s “100M Offers,” including a checklist to ensure you can craft an offer that checks all the right boxes.",
-        ],
-      },
-    ],
-  },
-  {
     titel: "UCGE",
     elemet: [
       {
@@ -268,6 +233,41 @@ export const Offers = [
       {
         name: "Objection handling notion templates for the most repeated objections in your niche",
         description: [""],
+      },
+    ],
+  },
+  {
+    titel: "Consulting Service",
+    elemet: [
+      {
+        subtitle: "Comprehensive Offer Audit",
+        name: "We’ll thoroughly analyze your current offers, identify hidden gaps, and highlight specific areas for improvement.",
+        description: [""],
+      },
+      {
+        subtitle: "Evidence-Based Strategies",
+        name: "Data-Driven Insights : Our recommendations are based on data, not opinions, ensuring you get actionable and effective strategies.",
+        description: [
+          "Proven Techniques: Our strategies are based on Alex Hormozi’s “100M Offers,” tested and successful across various industries, ensuring that our methods work for you.",
+        ],
+      },
+      {
+        subtitle: "Boost Client Acquisition",
+        name: "Learn how to craft offers that clients can’t say no to, increasing your Lifetime Gross Profit (LTGP) per client.",
+        description: [""],
+      },
+      {
+        subtitle: "Zero Cost, High Value",
+        name: "Experience the value of our consulting service without any upfront cost. All we ask in return is a testimonial if you’re satisfied.",
+        description: [""],
+      },
+    ],
+    bonus: [
+      {
+        name: "100M Offers Checklist",
+        description: [
+          " A comprehensive resume of Alex Hormozi’s “100M Offers,” including a checklist to ensure you can craft an offer that checks all the right boxes.",
+        ],
       },
     ],
   },

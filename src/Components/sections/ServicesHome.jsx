@@ -13,7 +13,7 @@ const ServicesHome = () => {
           const { title, icon, dettails } = service;
           return (
             <div
-              className={`shadow-md flex flex-col gap-2 p-2  ${
+              className={`shadow-md flex flex-col gap-2 p-2 transition-transform duration-300 transform hover:scale-105 ${
                 index == services.length - 1 ? `` : ``
               }   `}
             >

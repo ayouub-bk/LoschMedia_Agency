@@ -18,14 +18,14 @@ const Pricing = () => {
           return (
             <div
               className={`flex flex-col gap-6  p-6 rounded-2xl border-[2px] border-secondary  ${
-                index == 0
+                index == 1
                   ? `bg-secondary text-primary `
                   : `border-t-[6px] border-t-highlight `
               } `}
             >
               <div className="flex justify-between   ">
                 <h3 className="font-semibold">{titel}</h3>
-                {index == 1 && (
+                {index == 0 && (
                   <div className="bg-highlight py-[6px] px-[8px] rounded-lg text-primary  text-[13px]  ">
                     Guaranteed
                   </div>
@@ -33,7 +33,7 @@ const Pricing = () => {
               </div>
               <div className=" relative    ">
                 <h1 className="text-[54px] font-bold  ">Free</h1>
-                {index == 1 && (
+                {index == 0 && (
                   <p className="text-highlight absolute text-[15px] font-medium -bottom-1 left-24   ">
                     3 first clients only
                   </p>
@@ -50,7 +50,7 @@ const Pricing = () => {
                     <div className="">
                       <div
                         className={` flex gap-4 intems-center   ${
-                          index === 0 ? `text-black ` : `text-secondary`
+                          index === 1 ? `text-black ` : `text-secondary`
                         }`}
                       >
                         <img
@@ -113,7 +113,7 @@ const Pricing = () => {
               <div className="min-h-[230px] flex flex-col gap-4  ">
                 <h2
                   className={` ml-4 text-[25px] font-bold ${
-                    index == 0 ? `` : `text-highlight`
+                    index == 1 ? `` : `text-highlight`
                   } `}
                 >
                   {" "}
@@ -124,7 +124,11 @@ const Pricing = () => {
                     return (
                       <div>
                         <div className="flex gap-4 items-center  ">
-                          <p className="text-[30px] text-secondary  font-extrabold ">
+                          <p
+                            className={`text-[30px] font-extrabold ${
+                              index == 0 ? "text-secondary" : "text-primary"
+                            }`}
+                          >
                             +
                           </p>
                           <p className="font-semibold">{b.name}</p>

@@ -17,8 +17,10 @@ const OffersHome = () => {
           const { titel, elemet, bonus } = offer;
           return (
             <div
-              className={`flex flex-col gap-6  p-6 rounded-lg border-[1px] border-secondary  ${
-                index == 0 ? `bg-secondary text-primary ` : ``
+              className={`flex flex-col gap-6 shadow-lg   p-6 rounded-lg transition-shadow duration-300     ${
+                index == 0
+                  ? `bg-secondary hover:shadow-sky-700  text-primary `
+                  : `hover:shadow-2xl  border-black  border-t-[4px]  border-t-highlight  border-solid `
               } `}
             >
               <div className="flex justify-between   ">
@@ -91,7 +93,7 @@ const OffersHome = () => {
                   Textcolor="primary"
                 />
                 <ButtonOffer
-                  title="More dettails"
+                  title="More details"
                   BgColor={index !== 0 ? "secondary" : "primary"}
                   Textcolor={index !== 0 ? "primary" : "highlight"}
                 />

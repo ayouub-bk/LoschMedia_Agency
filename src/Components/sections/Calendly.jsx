@@ -17,7 +17,7 @@ const Calendly = () => {
   return (
     <div
       className="calendly-inline-widget"
-      data-url="https://calendly.com/kchahid0717"
+      data-url={import.meta.env.VITE_DATA_URL}
       style={{ minWidth: "320px", height: "700px" }}
     ></div>
   );

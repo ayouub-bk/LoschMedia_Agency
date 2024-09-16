@@ -18,108 +18,84 @@ import Icon7 from "../src/assets/icons/expertise.png";
 
 export const services = [
   {
-    title: "Email marketing",
-    icon: icon1,
-    dettails: [
-      {
-        name: "Data-Driven",
-        description: "Boost your email startegy with expert insights.",
-      },
-      { name: "Triple Your List", description: "Grow your email list by 3x." },
-      {
-        name: "12-Week Plane",
-        description: "Excute a complet newsletter strategy.",
-      },
-    ],
-  },
-  {
     title: "Free First Client",
     icon: icon2,
     dettails: [
-      {
-        name: "Guaranteed Success",
-        description:
-          "Receive your first client at no cost, ensuring immediate value and zero risk.",
-      },
+      "Receive your first client completely free with zero upfront costs.",
+      "Experience immediate value and results with no financial risk.",
+      "Only pay when we successfully bring in more clients.",
     ],
   },
   {
-    title: "Irresistible Offer Creation",
-    icon: icon3,
-    dettails: [
-      {
-        name: "Hormozi Method",
-        description:
-          "We create offers so compelling that clients can’t say no, boosting acquisition and increasing LTGP per client",
-      },
-    ],
-  },
-  {
-    title: "Total Marketing Strategy",
-    icon: icon4,
-    dettails: [
-      {
-        name: "Tailored Approach",
-        description:
-          "We craft a unique marketing strategy for your business to ensure you stand out.",
-      },
-    ],
-  },
-  {
-    title: "Appointment Setting & Closing",
-    icon: icon5,
-    dettails: [
-      {
-        name: "Expert Setters",
-        description: "We handle cold calls and set appointments.",
-      },
-      { name: "Closers", description: "Skilled negotiators close your deals." },
-    ],
-  },
-  {
-    title: "Referral System Build",
+    title: "Offer Consulting",
     icon: icon6,
     dettails: [
-      {
-        name: "Maximize Acquisition",
-        description: "Build a referral system to boost monthly client growth.",
-      },
+      "Leverage the Hormozi Method to craft irresistible offers for your business.",
+      "Increase your Lifetime Gross Profit (LTGP) per client.",
+      "Get expert consulting to create offers that drive growth and conversion.",
     ],
   },
   {
-    title: "Funnel Creation",
+    title: "Sales Funnel Building",
     icon: icon7,
     dettails: [
-      {
-        name: "Brunson Method",
-        description:
-          "We use Russell Brunson’s strategies to create a 2024 sales funnel that maximizes conversions.",
-      },
+      "Utilize Russell Brunson’s DotCom Secrets to create high-converting funnels.",
+      "Maximize your lead-to-client conversions with data-backed strategies.",
+      "Build a customized 2024 sales funnel tailored to your business.",
     ],
   },
   {
-    title: "Content Marketing Strategy",
+    title: "Marketing Strategy",
+    icon: icon4,
+    dettails: [
+      "Develop a tailored marketing plan unique to your industry.",
+      "Ensure your strategy stands out from competitors and converts leads into clients.",
+      "Backed by Alex Hormozi’s 100M Leads, delivering data-driven, efficient results.",
+    ],
+  },
+  {
+    title: "Content Strategy",
     icon: icon8,
     dettails: [
-      {
-        name: "Content Plan for 12 WeeksViral Content Creation     ",
-        description: "10 graphics",
-      },
+      "Create 12 weeks' worth of content, including 7 viral pieces.",
+      "Develop a tailored content plan for your business’s unique needs.",
+      "Produce 10 high-quality graphics to boost brand visibility.",
     ],
   },
   {
     title: "Extensive Outreach",
     icon: icon9,
     dettails: [
-      {
-        name: "We conduct 400+ cold emails ",
-        description: "",
-      },
-      { name: "100 cold calls ", description: "" },
-      {
-        name: "100 Instagram & facebook DMs",
-        description: "",
-      },
+      "Conduct 600+ outreach efforts per week, including emails, calls, and DMs.",
+      "Engage 400+ cold emails, 100 cold calls, and 100 social media DMs weekly.",
+      "Drive consistent outreach to connect with potential clients on multiple platforms.",
+    ],
+  },
+  {
+    title: "Email Marketing",
+    icon: icon1,
+    dettails: [
+      "Triple your email list with targeted, data-driven strategies.",
+      "Implement a 12-week newsletter plan to maintain engagement.",
+      "Leverage world-class email marketing tactics from industry leaders.",
+    ],
+  },
+  {
+    title: "Referral System Building",
+    icon: icon3,
+    dettails: [
+      "Build a powerful referral system to continuously bring in new clients.",
+      "Maximize your monthly client acquisition with minimal effort.",
+      "Generate a consistent stream of new business through trusted referrals.",
+    ],
+  },
+  {
+    title: "Sales Appointment Setting & Closing",
+    icon: icon5,
+    dettails: [
+      " Our expert team handles appointment setting, cold calling, and client follow-ups.",
+      "Professional closers manage negotiations and close deals on your behalf.",
+      " Focus on your business while we handle the entire sales process from outreach to closing.",
     ],
   },
 ];
@@ -136,7 +112,7 @@ export const Offers = [
         ],
       },
       {
-        subtitle: "Referral System Build",
+        subtitle: "Offer Consulting",
         name: "",
         description: [
           "Maximize Client Acquisition: We will build a referral system that continuously generates new clients, maximizing your monthly client acquisition.",

@@ -17,23 +17,19 @@ const ServicesHome = () => {
                 index == services.length - 1 ? `` : ``
               }   `}
             >
-              <div className="flex items-center justify-center gap-4 ">
-                <img src={icon} height="95px" width="95" alt="icon" />
-                <h2 className="text-[25px]">{title}</h2>
+              <div className="flex items-center justify-center gap-4 h-[100px] ">
+                <img src={icon} height="95px" width="90" alt="icon" />
+                <h2 className="text-[20px] font-bold ">{title}</h2>
               </div>
-              <div className="p-[10px] text-[16px] ">
+              <ul className=" text-[16px] pl-8  ">
                 {dettails.map((dettail) => {
-                  const { name, description } = dettail;
                   return (
-                    <div className="">
-                      <p className="p-2">
-                        {" "}
-                        <span className="font-bold">{name} </span> {description}
-                      </p>
-                    </div>
+                    <li className="list-disc  ">
+                      <p className="p-2">{dettail}</p>
+                    </li>
                   );
                 })}
-              </div>
+              </ul>
             </div>
           );
         })}

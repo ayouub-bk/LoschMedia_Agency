@@ -12,7 +12,7 @@ const OffersHome = () => {
       <h1 className="highlighted-title  text-secondary tablet:text-[48px] text-[39px] p-20 ">
         Offers
       </h1>
-      <div className="grid tablet:grid-cols-2  gap-10 grid-cols-1 ">
+      <div className="grid tablet:grid-cols-2  gap-24 grid-cols-1 ">
         {Offers.map((offer, index) => {
           const { titel, elemet, bonus } = offer;
           return (

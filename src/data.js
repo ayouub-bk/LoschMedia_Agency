@@ -106,70 +106,83 @@ export const Offers = [
     elemet: [
       {
         subtitle: "Free First Client",
-        name: "Guaranteed Success",
+        name: "",
         description: [
-          "Receive your first client at no cost, ensuring immediate value and zero risk.",
+          "Receive your first client completely free with zero upfront costs.",
+          "Experience immediate value and results with no financial risk.",
+          "Only pay when we suc1cessfully bring in more clients.",
         ],
       },
       {
         subtitle: "Offer Consulting",
         name: "",
         description: [
-          "Maximize Client Acquisition: We will build a referral system that continuously generates new clients, maximizing your monthly client acquisition.",
+          "Leverage the Hormozi Method to craft irresistible offers for your business.",
+          "Increase your Lifetime Gross Profit (LTGP) per client.",
+          "Get expert consulting to create offers that drive growth and conversion.",
         ],
       },
       {
-        subtitle: "Extensive Outreach: +600 p/week",
-        name: "600+ outreach efforts per week",
-        description: [
-          "We conduct 400+ cold emails",
-          "100 cold calls",
-          "100 Instagram & Facebook DMs",
-        ],
-      },
-      {
-        subtitle: "Appointment Setting & Closing",
+        subtitle: "Sales Funnel Building",
         name: "",
         description: [
-          "Expert Appointment Setters: Our team handles all responses and calls to set appointments. (these are the ones who cold call and outreach)",
-          "Professional Closers: Skilled negotiators manage and close deals on your behalf.",
+          "Utilize Russell Brunson’s DotCom Secrets to create high-converting funnels.",
+          "Maximize your lead-to-client conversions with data-backed strategies.",
+          "Build a customized 2024 sales funnel tailored to your business.",
+        ],
+      },
+      {
+        subtitle: "Marketing Strategy",
+        name: "",
+        description: [
+          "Develop a tailored marketing plan unique to your industry.",
+          "Ensure your strategy stands out from competitors and converts leads into clients.",
+          "Backed by Alex Hormozi’s 100M Leads, delivering data-driven, efficient results.",
+        ],
+      },
+      {
+        subtitle: "Content Strategy",
+        name: "",
+        description: [
+          "Create 12 weeks' worth of content, including 7 viral pieces.",
+          "Develop a tailored content plan for your business’s unique needs.",
+          "Produce 10 high-quality graphics to boost brand visibility.",
+        ],
+      },
+      {
+        subtitle: "Extensive Outreach",
+        name: "",
+        description: [
+          "Conduct 600+ outreach efforts per week, including emails, calls, and DMs.",
+          "Engage 400+ cold emails, 100 cold calls, and 100 social media DMs weekly.",
+          "Drive consistent outreach to connect with potential clients on multiple platforms.",
         ],
       },
       {
         subtitle: "Email Marketing",
         name: "",
         description: [
-          "Triple Your Email List: We aim to triple your email list minimum.",
-          "12-Week Newsletter Plan: Create and implement a comprehensive email newsletter plan.",
+          "Triple your email list with targeted, data-driven strategies.",
+          "Implement a 12-week newsletter plan to maintain engagement.",
+          "Leverage world-class email marketing tactics from industry leaders.",
         ],
       },
       {
-        subtitle: "Irresistible Offer Creation",
+        subtitle: "Referral System Building",
         name: "",
         description: [
-          "Hormozi Method: We craft so compelling that clients can’t say no, boosting your client acquisition and increasing your Lifetime Gross Profit (LTGP) per client.",
+          "Build a powerful referral system to continuously bring in new clients.",
+          "Maximize your monthly client acquisition with minimal effort.",
+          "Generate a consistent stream of new business through trusted referrals.",
         ],
       },
       {
-        subtitle: "Comprehensive Marketing Strategy",
+        subtitle: "Sales Appointment Setting & Closing",
         name: "",
         description: [
-          "Tailored Approach: We develop a unique marketing strategy specifically for your business, ensuring you stand out in your industry.",
-        ],
-      },
-      {
-        subtitle: "Funnel Creation",
-        name: "",
-        description: [
-          "Brunson Method: Utilizing Russell Brunson’s proven strategies, we build a 2024 sales funnel designed to maximize conversions.",
-        ],
-      },
-      {
-        subtitle: "Content Marketing Strategy",
-        name: "Content Plan for 12 Weeks",
-        description: [
-          "Viral Content Creation: Receive 7 pieces of high-quality, viral content produced by our expert team.",
-          "10 graphics: High-quality, engaging content to fuel your marketing efforts.",
+          "Our expert team handles appointment setting, cold calling, and client follow-ups.",
+          "Professional closers manage negotiations and close deals on your behalf.",
+          "Focus on your business while we handle the entire sales process from outreach to closing.",
         ],
       },
     ],
@@ -192,23 +205,44 @@ export const Offers = [
     ],
     bonus: [
       {
-        name: "Access to our Client Retention Workshop we charge 1000 USD",
-        description: [""],
+        name: "Client Retention Workshop Access",
+        description: [
+          "Attend our exclusive client retention workshop valued at $1,000.",
+          "Learn proven strategies to retain clients and maximize lifetime value.",
+          "Implement methods to keep your clients loyal and engaged.",
+        ],
       },
       {
-        name: "20+ viral graphic templates ",
-        description: "",
+        name: "Viral Graphic Templates",
+        description: [
+          "Gain professionally designed viral graphic templates for social media growth.",
+          "Use ready-to-go graphics to enhance your brand’s online presence.",
+          "Drive engagement with high-quality visuals tailored to your industry.",
+        ],
+      },
+      {
+        name: "Top 8 Email Templates",
+        description: [
+          "Access the most effective email templates for your industry.",
+          "mprove email engagement and conversions with proven scripts.",
+          "Get fully optimized templates designed to resonate with your audience.",
+        ],
       },
       {
         name: "Free Access to AI Tools",
         description: [
-          "$500+ Value: Gain access to top AI tools that support your social media growth throughout our partnership.",
-          "AI Prompts Guide Book: 101 AI prompts tailored to any niche to enhance your content creation.",
+          "Get free access to top AI tools valued at $500+.",
+          "Use advanced AI to enhance your marketing and content creation.",
+          "Receive a 101 AI Prompts Guidebook tailored to your industry.",
         ],
       },
       {
-        name: "Objection handling notion templates for the most repeated objections in your niche",
-        description: [""],
+        name: "Objection Handling Templates",
+        description: [
+          "Access objection-handling templates designed for common objections in your niche.",
+          "Overcome client hesitation with proven, effective responses.",
+          "Close more deals by addressing objections confidently and effectively.",
+        ],
       },
     ],
   },

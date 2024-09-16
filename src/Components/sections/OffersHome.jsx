@@ -17,7 +17,7 @@ const OffersHome = () => {
           const { titel, elemet, bonus } = offer;
           return (
             <div
-              className={`flex flex-col gap-6 shadow-lg   p-6 rounded-lg transition-shadow duration-300     ${
+              className={`flex flex-col gap-6 shadow-lg   p-6 rounded-lg    transition-all duration-700     ${
                 index == 0
                   ? `bg-secondary hover:shadow-sky-700  text-primary `
                   : `hover:shadow-2xl  border-black  border-t-[4px]  border-t-highlight  border-solid `
@@ -41,24 +41,46 @@ const OffersHome = () => {
               </div>
 
               <div
-                className="flex flex-col gap-4  "
+                className=" "
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
               >
-                {elemet.slice(0, n).map((i) => {
-                  return (
-                    <div className="flex  gap-4 items-center ">
-                      <img
-                        className=""
-                        height="24px"
-                        width="24px"
-                        src={checkIcon}
-                        alt="icon"
-                      />
-                      <p>{i.subtitle}</p>
-                    </div>
-                  );
-                })}
+                {!hover ? (
+                  <div className="flex flex-col gap-4  transition-all duration-700 ">
+                    {elemet.slice(0, 5).map((i) => {
+                      return (
+                        <div className="flex  gap-4 items-center ">
+                          <img
+                            className=""
+                            height="24px"
+                            width="24px"
+                            src={checkIcon}
+                            alt="icon"
+                          />
+                          <p>{i.subtitle}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div className="flex flex-col gap-6 h-[400px] transition-all duration-700 ">
+                    {elemet.map((i) => {
+                      return (
+                        <div className="flex  gap-4 items-center  ">
+                          <img
+                            className=""
+                            height={i.subtitle ? "24px" : "0px"}
+                            width={i.subtitle ? "24px" : "0px"}
+                            src={checkIcon}
+                            alt="icon"
+                          />
+
+                          <p>{i.subtitle}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
               <div className="min-h-[300px] flex flex-col gap-4 mt-10 ">
                 <h2

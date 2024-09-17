@@ -8,12 +8,15 @@ import Leadership from "../Components/sections/Leadership";
 const About = () => {
   return (
     <>
-      <header className="bg-[url('./assets/imgs/StockImg.jpg')] bg-center   h-[700px]  flex justify-center items-center desktop:p-0  p-4 relative">
+      <header
+        className="bg-[url('./assets/imgs/StockImg.jpg')] bg-center   h-[700px]  flex justify-center items-center desktop:p-0  p-4 relative"
+        id="AboutSc"
+      >
         <div className="bg-black absolute inset-0 opacity-75"></div>
         <div className="  z-10 flex flex-col gap-[30px] items-center desktop:w-[1008px] text-center text-primary ">
           <h1 className="text-[61px] font-bold   ">Who are We ?</h1>
           <p className=" text-[29px] tablet:text-[31px] desktop:max-w-[70%] desktop:leading-[3rem] -tracking-tighter ">
-            LoschMedia empowers B2B businesses with a performance-based strategy
+            LoshMedia empowers B2B businesses with a performance-based strategy
             that ensures you only pay for signed clients. Minimize risk,
             maximize growth.
           </p>
@@ -50,7 +53,6 @@ const About = () => {
           </h1>
           <div className="flex flex-col gap-6 relative p-2 ">
             <h2 className="text-secondary/40 desktop:text-[55px] tablet:text-[45px] text-[30px] absolute right-12 tablet:-top-32 -top-20  ">
-              {" "}
               Others
             </h2>
             {SpecialData.map((special, index) => {

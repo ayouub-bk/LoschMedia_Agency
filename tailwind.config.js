@@ -23,6 +23,9 @@ export default {
     backgroundImage: {
       "custom-radial": "radial-gradient(at center, #0150A7, #FFFFFF)",
     },
+    // boxShadow: {
+    //   "custom-blue": "0 4px 8px rgba(0, 72, 166, 0.5)", // Custom shadow color
+    // },
   },
   plugins: [],
 };

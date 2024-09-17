@@ -3,6 +3,7 @@ import Button from "../Ui/Button";
 import { Link } from "react-router-dom";
 import logo from "../../assets/imgs/Logo.jpg";
 import menu from "../../assets/icons/bars-solid.svg";
+import { BluetoothIcon } from "lucide-react";
 const Topbar = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (

@@ -12,7 +12,10 @@ const Pricing = () => {
           to get started
         </h3>
       </div>
-      <div className="flex  flex-col   gap-28 tablet:w-[700px] w-full  ">
+      <div
+        className="flex  flex-col   gap-28 tablet:w-[700px] w-full  "
+        id="offersPr"
+      >
         {Offers.map((offer, index) => {
           const { titel, elemet, bonus } = offer;
           return (

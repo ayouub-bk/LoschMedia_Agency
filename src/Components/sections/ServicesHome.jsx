@@ -3,7 +3,10 @@ import { services } from "../../data";
 const ServicesHome = () => {
   console.log(services[1]);
   return (
-    <div className="p-10 w-full flex flex-col items-center  gap-20">
+    <div
+      className="p-10 w-full flex flex-col items-center  gap-20"
+      id="servicesHome"
+    >
       <h1 className="highlighted-title  text-secondary tablet:text-[48px] text-[39px] ">
         Our Services
       </h1>

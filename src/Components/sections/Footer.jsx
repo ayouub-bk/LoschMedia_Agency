@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/imgs/Logo.jpg";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import insta from "../../assets/icons/instagram1.png";
 import linkeIn from "../../assets/icons/linkedin1.png";
 import youtub from "../../assets/icons/youtube.png";
@@ -32,16 +33,16 @@ const Footer = () => {
             </h2>
             <ul className="text-primary text-[23px] flex flex-col gap-2 ">
               <li>
-                <Link to="#Services">Services</Link>
+                <HashLink to="/#servicesHome">Services</HashLink>
               </li>
               <li>
-                <Link to="Pricing">Offers</Link>
+                <HashLink to="/Pricing#offersPr">Offers</HashLink>
               </li>
               <li>
-                <Link to="About">About</Link>
+                <HashLink to="/About#AboutSc">About</HashLink>
               </li>
               <li>
-                <Link to="Contact">Contact</Link>
+                <HashLink to="/Contact#calendly">Contact</HashLink>
               </li>
             </ul>
           </div>

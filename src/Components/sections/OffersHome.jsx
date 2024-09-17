@@ -57,7 +57,7 @@ const OffersHome = () => {
                             src={checkIcon}
                             alt="icon"
                           />
-                          <p>{i.subtitle}</p>
+                          <p className="">{i.subtitle}</p>
                         </div>
                       );
                     })}
@@ -75,7 +75,7 @@ const OffersHome = () => {
                             alt="icon"
                           />
 
-                          <p>{i.subtitle}</p>
+                          <p className="">{i.subtitle}</p>
                         </div>
                       );
                     })}

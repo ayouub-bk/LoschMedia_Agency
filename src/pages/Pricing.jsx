@@ -181,7 +181,7 @@ const Pricing = () => {
               </div>
               <div className="w-full">
                 <button className="bg-highlight rounded-xl w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-[.5s]   p-2">
-                  <HashLink to="Contact/#calendly"> Get Started</HashLink>
+                  <HashLink to="/Contact/#calendly"> Get Started</HashLink>
                 </button>
               </div>
             </div>

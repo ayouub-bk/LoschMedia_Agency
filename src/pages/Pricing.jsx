@@ -55,8 +55,8 @@ const Pricing = () => {
                       >
                         <img
                           className=""
-                          height="24px"
-                          width="24px"
+                          height={i.subtitle ? "24px" : "0px"}
+                          width={i.subtitle ? "24px" : "0px"}
                           src={checkIcon}
                           alt="icon"
                         />
@@ -86,17 +86,22 @@ const Pricing = () => {
               </div>
               <div>
                 {offer.Guarunti && (
-                  <h2
-                    className={`text-[25px] font-bold mb-2 ml-4 text-secondary `}
-                  >
-                    {" "}
-                    Guarunti{" "}
-                  </h2>
+                  <div>
+                    <h2
+                      className={`text-[25px] font-bold mb-2 ml-4 text-secondary `}
+                    >
+                      {" "}
+                      Guarunti{" "}
+                    </h2>
+                    <h3 className="text-highlight text-[20px] my-4 ">
+                      1 - Results-Only Guarantee
+                    </h3>
+                  </div>
                 )}
                 {offer.Guarunti?.map((G) => {
                   const { title, dettail } = G;
                   return (
-                    <div className="flex flex-col  gap-4 ">
+                    <div className="flex flex-col  gap-4 p-2">
                       <div className="flex items-center gap-4 ">
                         <p className="text-[30px] text-secondary font-extrabold ">
                           +

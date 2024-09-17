@@ -271,13 +271,7 @@ export const Offers = [
           "Transform your offers to be value-based rather than price-based. When people see your offer, their reaction will be, 'I’m getting all this?' They'll focus on the value and forget about the price.",
         ],
       },
-      {
-        subtitle: "Zero Cost, High Value",
-        name: "",
-        description: [
-          "Experience the value of our consulting service without any upfront cost. All we ask in return is a testimonial if you’re satisfied..",
-        ],
-      },
+
       {
         subtitle: "Boost Client Acquisition",
         name: "",
@@ -286,9 +280,11 @@ export const Offers = [
         ],
       },
       {
-        subtitle: "",
+        subtitle: "Zero Cost, High Value",
         name: "",
-        description: [],
+        description: [
+          "Experience the value of our consulting service without any upfront cost. All we ask in return is a testimonial if you’re satisfied..",
+        ],
       },
       {
         subtitle: "",

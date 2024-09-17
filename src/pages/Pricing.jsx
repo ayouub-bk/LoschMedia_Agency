@@ -26,7 +26,7 @@ const Pricing = () => {
               <div className="flex justify-between   ">
                 <h3 className="font-semibold">{titel}</h3>
                 {index == 0 && (
-                  <div className="bg-highlight py-[6px] px-[8px] rounded-lg text-primary  text-[13px]  ">
+                  <div className="bg-highlight py-[6px] px-[8px] rounded-lg text-primary  text-[13px] cursor-pointer ">
                     Guaranteed
                   </div>
                 )}
@@ -34,7 +34,7 @@ const Pricing = () => {
               <div className=" relative    ">
                 <h1 className="text-[54px] font-bold  ">Free</h1>
                 {index == 0 && (
-                  <p className="text-highlight absolute text-[15px] font-medium -bottom-1 left-24   ">
+                  <p className="text-highlight absolute text-[15px] font-medium -bottom-1 left-24  cursor-pointer ">
                     3 first clients only
                   </p>
                 )}
@@ -50,7 +50,9 @@ const Pricing = () => {
                     <div className="">
                       <div
                         className={` flex gap-4 intems-center   ${
-                          index === 1 ? `text-black ` : `text-secondary`
+                          index === 1
+                            ? `text-black font-bold`
+                            : `text-secondary`
                         }`}
                       >
                         <img
@@ -60,7 +62,7 @@ const Pricing = () => {
                           src={checkIcon}
                           alt="icon"
                         />
-                        <p className="text-[16px] py-2 font-bold -tracking-tighter">
+                        <p className="text-[16px] py-2 font-bold -tracking-tighter cursor-pointer ">
                           {i.subtitle}
                         </p>
                       </div>
@@ -88,7 +90,7 @@ const Pricing = () => {
                 {offer.Guarunti && (
                   <div>
                     <h2
-                      className={`text-[25px] font-bold mb-2 ml-4 text-secondary `}
+                      className={`text-[25px] font-bold mb-2 ml-4 text-secondary  cursor-pointer`}
                     >
                       {" "}
                       Guarunti{" "}
@@ -106,10 +108,12 @@ const Pricing = () => {
                         <p className="text-[30px] text-secondary font-extrabold ">
                           +
                         </p>
-                        <h2 className="font-semibold">{title}</h2>
+                        <h2 className="font-semibold cursor-pointer ">
+                          {title}
+                        </h2>
                       </div>
 
-                      <p className="mt-2">{dettail}</p>
+                      <p className="mt-2  ">{dettail}</p>
                     </div>
                   );
                 })}
@@ -136,7 +140,9 @@ const Pricing = () => {
                           >
                             +
                           </p>
-                          <p className="font-semibold">{b.name}</p>
+                          <p className="font-semibold cursor-pointer ">
+                            {b.name}
+                          </p>
                         </div>
                         <ul className="flex flex-col mt-2 p-2">
                           {b.description &&
@@ -158,7 +164,7 @@ const Pricing = () => {
                 </div>
               </div>
               <div className="w-full">
-                <button className="bg-highlight rounded-lg w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-[.5s]   p-2">
+                <button className="bg-highlight rounded-xl w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-[.5s]   p-2">
                   Get started
                 </button>
               </div>

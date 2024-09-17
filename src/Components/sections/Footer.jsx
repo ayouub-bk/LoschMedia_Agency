@@ -56,7 +56,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="linkedin.com/in/chahidkari">
+                <Link to="https://www.linkedin.com/in/chahidkari/">
                   <img src={linkeIn} alt="linkedIn" />
                 </Link>
               </li>

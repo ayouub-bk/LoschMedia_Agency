@@ -1,11 +1,11 @@
 import React from "react";
-import Button from "../Ui/Button";
 import Logo from "../../assets/imgs/Logo.jpg";
 import { Link } from "react-router-dom";
 import insta from "../../assets/icons/instagram1.png";
 import linkeIn from "../../assets/icons/linkedin1.png";
 import youtub from "../../assets/icons/youtube.png";
 import ButtonOffer from "../Ui/ButtonOffer";
+import Button from "../Ui/Button";
 const Footer = () => {
   return (
     <>
@@ -22,16 +22,7 @@ const Footer = () => {
             Book a meeting now{" "}
           </h1>
           <div className="flex justify-center gap-8 ">
-            <ButtonOffer
-              BgColor="highlight"
-              Textcolor="primary"
-              title="Book a Call"
-            />
-            <ButtonOffer
-              BgColor="primary"
-              Textcolor="black"
-              title="More Details"
-            />
+            <Button />
           </div>
         </div>
         <div className="flex tablet:gap-44 gap-20">
@@ -60,17 +51,17 @@ const Footer = () => {
             </h2>
             <ul className="social-links flex  flex-col  gap-4 items-center ">
               <li>
-                <Link>
+                <Link to="https://www.instagram.com/karichahid/">
                   <img src={insta} alt="insta" />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="linkedin.com/in/chahidkari">
                   <img src={linkeIn} alt="linkedIn" />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="https://www.youtube.com/@ChahidKari">
                   <img src={youtub} alt="youtub" />
                 </Link>
               </li>

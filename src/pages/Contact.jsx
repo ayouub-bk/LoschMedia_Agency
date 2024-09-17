@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../Components/Ui/Button";
-import contactImg from "../assets/icons/Calendly-Demand-Gen-2.png";
 import Calendly from "../Components/sections/Calendly";
 const Contact = () => {
   return (
@@ -16,7 +15,9 @@ const Contact = () => {
           <Button />
         </div>
       </header>
-      <Calendly />
+      <section id="calendly">
+        <Calendly />
+      </section>
     </div>
   );
 };

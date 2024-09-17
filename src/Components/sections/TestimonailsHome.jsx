@@ -2,7 +2,7 @@ import React from "react";
 import video from "../../assets/vid/1st-testimonial.mp4";
 import { Link } from "react-router-dom";
 import commmas from "../../assets/icons/commas1.png";
-import profile from "../../assets/imgs/StockImg.jpg";
+import profile from "../../assets/imgs/Wail.jpg";
 import more from "../../assets/icons/more1.png";
 
 const TestimonailsHome = () => {
@@ -31,20 +31,16 @@ const TestimonailsHome = () => {
             <div className="flex gap-4 ">
               <img
                 src={profile}
-                height="60px"
-                width="60px"
-                className="rounded-[50%]"
+                height="35px"
+                width="45px"
+                className="  rounded-[50%] object-center"
               />
               <div className="text-secondary">
-                <h2 className="text-[20px]">Kari Chahid</h2>
-                <p className=" opacity-50 text-[14px] ">LoshMedia CEO</p>
+                <h2 className="text-[25px]">Wail dehar</h2>
+                <p className=" opacity-50 text-[14px] ">
+                  CEO of a video editing agency
+                </p>
               </div>
-            </div>
-
-            <div className="self-end">
-              <Link className="text-highlight" to="/testimonial">
-                See all ...
-              </Link>
             </div>
           </div>
         </div>

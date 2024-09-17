@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import Button from "../Components/Ui/Button";
 import Calendly from "../Components/sections/Calendly";
+
 const Contact = () => {
+  const section1 = useRef(null);
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="">
       <header className=" bg-custom-radial py-20 px-10  flex justify-center items-center p-4 relative">
@@ -12,10 +21,10 @@ const Contact = () => {
           <p className=" text-[37px] tablet:text-[61px]  ">
             Partner with Us and Watch Your Customers Grow!
           </p>
-          <Button />
+          <Button click={() => scrollToSection(section1)} />
         </div>
       </header>
-      <section id="calendly">
+      <section ref={section1} id="calendly">
         <Calendly />
       </section>
     </div>

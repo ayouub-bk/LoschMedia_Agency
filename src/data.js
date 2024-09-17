@@ -102,6 +102,13 @@ export const services = [
 
 export const Offers = [
   {
+    start: [
+      'Slogan: "Accelerate Your Client Acquisition and Drive Your Business to Guaranteed Success".',
+      "🌟 Who We Are: Your Partner in Guaranteed Client Acquisition! 🌟",
+      "At LoshMedia we specialize in transforming leads into loyal, paying customers for B2B businesses. Our comprehensive approach covers every aspect of marketing and sales, ensuring you get the results you need without the hassle.",
+      "Irresistible Offer: Transform Your Business with Guaranteed Client Acquisition.",
+    ],
+
     titel: "UCGE",
     elemet: [
       {
@@ -245,8 +252,12 @@ export const Offers = [
         ],
       },
     ],
+    fin: "",
   },
   {
+    start: [
+      "Transform your business with our FREE Offer Consulting Service. Our expert team will guide you through creating irresistible offers that drive client acquisition and increase profitability. Here’s what you’ll get:",
+    ],
     titel: "Consulting Service",
     elemet: [
       {
@@ -310,6 +321,7 @@ export const Offers = [
         ],
       },
     ],
+    fin: "Take advantage of this opportunity to elevate your business with our free consulting service. Transform your offers and watch your client acquisition soar! 🚀",
   },
 ];
 

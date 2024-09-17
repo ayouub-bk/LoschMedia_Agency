@@ -2,6 +2,7 @@ import React from "react";
 import { Offers } from "../data";
 import Button from "../Components/Ui/Button";
 import checkIcon from "../assets/icons/circle-check-solid.svg";
+import { h3 } from "framer-motion/client";
 
 const Pricing = () => {
   return (
@@ -17,7 +18,7 @@ const Pricing = () => {
         id="offersPr"
       >
         {Offers.map((offer, index) => {
-          const { titel, elemet, bonus } = offer;
+          const { titel, elemet, bonus, start, fin } = offer;
           return (
             <div
               className={`flex flex-col gap-6  p-6 rounded-2xl border-[2px] border-secondary  ${
@@ -42,12 +43,20 @@ const Pricing = () => {
                   </p>
                 )}
               </div>
-
-              <div
-                className="flex flex-col gap-4  "
-                onMouseEnter={() => setHover(true)}
-                onMouseLeave={() => setHover(false)}
-              >
+              <div className=" leading-7 pt-4 flex flex-col gap-4 ">
+                {start.map((T, idx) => {
+                  return (
+                    <h3
+                      className={`${
+                        idx == 1 ? "text-center p-2 text-[20px]  " : ""
+                      }`}
+                    >
+                      {T}
+                    </h3>
+                  );
+                })}
+              </div>
+              <div className="flex flex-col gap-4  ">
                 {elemet.map((i) => {
                   return (
                     <div className="">
@@ -165,6 +174,9 @@ const Pricing = () => {
                     );
                   })}
                 </div>
+              </div>
+              <div>
+                <h3 className="text-center leading-7 ">{fin}</h3>
               </div>
               <div className="w-full">
                 <button className="bg-highlight rounded-xl w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-[.5s]   p-2">

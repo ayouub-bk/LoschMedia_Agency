@@ -8,10 +8,10 @@ const Faq = () => {
         <h1 className="highlighted-title text-secondary tablet:text-[48px] text-[39px] font-bold">
           FAQ
         </h1>
-        <div className=" p-4">
+        <div className=" p-4 flex flex-col gap-4  ">
           {FaqData.map((item, index) => {
             const { question, answer } = item;
-            return <Accordion Q={question} A={answer} />;
+            return <Accordion Q={question} A={answer} Index={index} />;
           })}
         </div>
       </div>

@@ -320,44 +320,123 @@ export const Offers = [
 export const FaqData = [
   {
     question: "How does the 'Free First Client' offer work?",
-    answer: [
-      "Before we start working together, we’ll schedule a quick call to ensure we’re the right fit for each other. If we proceed, we’ll implement our comprehensive customer acquisition strategies as outlined in our offer. Our goal is to secure a paying client for your business at no cost to you.",
-      "This process allows us to demonstrate the effectiveness of our methods and showcase the results we promise. It also gives us a practical understanding of how we will collaborate with you going forward. Essentially, you won't pay us anything for this initial client; instead, we invest our expertise and resources to prove our approach works.",
-      "All we ask in return is a testimonial if you’re satisfied with the results. This real-world performance is the best way to validate our strategies and provide you with concrete data on how we can achieve your business goals.",
-    ],
+    answer: {
+      title: [
+        "Before we start working together, we’ll schedule a quick call to ensure we’re the right fit for each other. If we proceed, we’ll implement our comprehensive customer acquisition strategies as outlined in our offer. Our goal is to secure a paying client for your business at no cost to you.",
+        "This process allows us to demonstrate the effectiveness of our methods and showcase the results we promise. It also gives us a practical understanding of how we will collaborate with you going forward. Essentially, you won't pay us anything for this initial client; instead, we invest our expertise and resources to prove our approach works.",
+        "All we ask in return is a testimonial if you’re satisfied with the results. This real-world performance is the best way to validate our strategies and provide you with concrete data on how we can achieve your business goals.",
+      ],
+
+      conclusion: [""],
+    },
   },
   {
     question:
       "What metrics do you use to measure success, and how does payment work?",
-    answer: [
-      "At LoschMedia, our primary metric for success is client acquisition. Our focus is on delivering tangible results by securing paying clients for your business. Even when you engage with us, you only pay us per client acquired. This results-oriented approach ensures that you invest in actual outcomes, not just potential.",
-      "If we don’t deliver a client, we don’t get paid. We believe in putting our money where our mouth is, which aligns with our commitment to providing value.",
-      "We offer multiple payment plans and options to fit various needs and preferences. While our primary metric is client acquisition due to its clear impact and effectiveness, we understand that different businesses may have unique metrics or goals. If you have specific requirements or prefer other performance indicators, we can tailor our services to meet those needs. Our goal is to ensure that our strategies align with your objectives and deliver",
-    ],
+    answer: {
+      title: [
+        "At LoschMedia, our primary metric for success is client acquisition. Our focus is on delivering tangible results by securing paying clients for your business. Even when you engage with us, you only pay us per client acquired. This results-oriented approach ensures that you invest in actual outcomes, not just potential.",
+        "If we don’t deliver a client, we don’t get paid. We believe in putting our money where our mouth is, which aligns with our commitment to providing value.",
+        "We offer multiple payment plans and options to fit various needs and preferences. While our primary metric is client acquisition due to its clear impact and effectiveness, we understand that different businesses may have unique metrics or goals. If you have specific requirements or prefer other performance indicators, we can tailor our services to meet those needs. Our goal is to ensure that our strategies align with your objectives and deliver the results you expect.",
+      ],
+      conclusion: [""],
+    },
   },
   {
     question:
       "How do you ensure that your strategies and methods are effective?",
-    answer: [
-      "At LoschMedia, we are dedicated to using proven methods and strategies to ensure the effectiveness of our services. Our approach is grounded in extensive research and real-world testing, informed by the insights and techniques of leading experts in the field.",
-      "Here’s how we ensure our strategies work:",
-      "1. Expert Knowledge: We have studied the books, courses, and webinars of top industry experts, including Alex Hormozi, Russell Brunson, Grant Cardone, and Jeremy Miner. By integrating their best practices and methodologies, we leverage world-class knowledge in every aspect of our service.",
-      "2. Data-Driven Decisions: Our strategies are built on rigorous data analysis and split testing. We continuously test different approaches to identify what works best, ensuring that our methods are not based on opinions but on empirical evidence.",
-      "3. Proven Results: We focus on delivering real, measurable outcomes. Our core offer, including the Ultimate Client Growth Engine, is designed to generate paying clients for your business. We’ve tested these strategies across various industries to confirm their effectiveness.",
-      "4. Continuous Improvement: We are committed to ongoing improvement. We analyze results, gather feedback, and refine our methods to adapt to changing market conditions and client needs.",
-      "By combining expert knowledge, data-driven strategies, and a commitment to continuous improvement, we ensure that our methods are effective and deliver the results you need.",
-    ],
+    answer: {
+      title: [
+        "At LoschMedia, we are dedicated to using proven methods and strategies to ensure the effectiveness of our services. Our approach is grounded in extensive research and real-world testing, informed by the insights and techniques of leading experts in the field.",
+        "Here’s how we ensure our strategies work:",
+      ],
+      content: [
+        {
+          name: "Expert Knowledge : ",
+          text: " We have studied the books, courses, and webinars of top industry experts, including Alex Hormozi, Russell Brunson, Grant Cardone, and Jeremy Miner. By integrating their best practices and methodologies, we leverage world-class knowledge in every aspect of our service.",
+        },
+        {
+          name: "Data-Driven Decisions : ",
+          text: " Our strategies are built on rigorous data analysis and split testing. We continuously test different approaches to identify what works best, ensuring that our methods are not based on opinions but on empirical evidence.",
+        },
+        {
+          name: "Proven Results : ",
+          text: " We focus on delivering real, measurable outcomes. Our core offer, including the Ultimate Client Growth Engine, is designed to generate paying clients for your business. We’ve tested these strategies across various industries to confirm their effectiveness.",
+        },
+        {
+          name: "Continuous Improvement : ",
+          text: " We are committed to ongoing improvement. We analyze results, gather feedback, and refine our methods to adapt to changing market conditions and client needs.",
+        },
+      ],
+      conclusion: [
+        "By combining expert knowledge, data-driven strategies, and a commitment to continuous improvement, we ensure that our methods are effective and deliver the results you need.",
+      ],
+    },
   },
   {
     question: "How do you ensure that clients only pay for results?",
-    answer: [
-      "At LoschMedia, our commitment to a results-driven approach is central to how we operate. Here’s how we ensure that you only pay for the results we deliver:",
-      "1. Client-Centric Metric: Our primary metric is acquiring paying clients for you. This means that you only pay us when you actually see revenue coming in from the clients we provide. If you don’t make money, we don’t get paid. This performance-based model aligns our success with yours, ensuring we are fully invested in delivering tangible outcomes",
-      "2. Results-Only Payment Structure: We offer flexible payment plans that are directly tied to the clients we bring you. Our payment structure ensures that you’re not paying for potential leads or empty promises. Instead, you only invest in real clients who generate revenue for your business.",
-      "3. No Results, No Payment: Our approach is straightforward: if we do not deliver the results we promise, we do not receive payment. This risk-free model puts the onus on us to perform and ensures that you are only paying for actual, measurable success.",
-      "4. Transparent Process: We keep the process transparent and straightforward. You will know exactly what to expect and how payments are linked to the results we achieve. Our goal is to build trust and ensure you see the value of our services before any payment is made.",
-      "By focusing solely on delivering paying clients and linking our compensation to your success, we ensure that our services provide real value and that you only pay for the results you receive.",
-    ],
+    answer: {
+      title: [
+        "At LoschMedia, our commitment to a results-driven approach is central to how we operate. Here’s how we ensure that you only pay for the results we deliver:",
+      ],
+      content: [
+        {
+          name: "Client-Centric Metric : ",
+          text: " Our primary metric is acquiring paying clients for you. This means that you only pay us when you actually see revenue coming in from the clients we provide. If you don’t make money, we don’t get paid. This performance-based model aligns our success with yours, ensuring we are fully invested in delivering tangible outcomes.",
+        },
+        {
+          name: "Results-Only Payment Structure : ",
+          text: "We offer flexible payment plans that are directly tied to the clients we bring you. Our payment structure ensures that you’re not paying for potential leads or empty promises. Instead, you only invest in real clients who generate revenue for your business.",
+        },
+        {
+          name: "No Results, No Payment : ",
+          text: " Our approach is straightforward: if we do not deliver the results we promise, we do not receive payment. This risk-free model puts the onus on us to perform and ensures that you are only paying for actual, measurable success.",
+        },
+        {
+          name: "Transparent Process :",
+          text: "We keep the process transparent and straightforward. You will know exactly what to expect and how payments are linked to the results we achieve. Our goal is to build trust and ensure you see the value of our services before any payment is made.",
+        },
+      ],
+      conclusion: [
+        "By focusing solely on delivering paying clients and linking our compensation to your success, we ensure that our services provide real value and that you only pay for the results you receive.",
+      ],
+    },
+  },
+
+  {
+    question:
+      "What makes your strategies different from other marketing agencies?",
+    answer: {
+      title: [
+        "At LoschMedia, our commitment to a results-driven approach is central to how we operate. Here’s how we ensure that you only pay for the results we deliver:",
+      ],
+    },
+  },
+  {
+    question:
+      "What kind of support will I receive during and after the implementation of your services?",
+    answer: {
+      title: [
+        "At LoschMedia, we recognize that clients have different preferences for support and communication. We cater to these preferences by offering flexible support options:",
+      ],
+      content: [
+        {
+          name: "Personalized Support: ",
+          text: " We understand that clients fall into two categories—those who prefer daily updates and weekly meetings to monitor budget and progress, and those who prefer communication only when significant results are achieved. We tailor our support to match your preferred style.",
+        },
+        {
+          name: "Flexible Communication Channels : ",
+          text: "You can choose the communication channels that work best for you, including email, WhatsApp, phone calls, or Google Meet. We adapt to your preferences to ensure effective and convenient interactions.",
+        },
+        {
+          name: "Customized Interaction : ",
+          text: " Based on your feedback, we will provide updates and support in a manner that suits you best, ensuring you receive the level of detail and frequency you prefer.",
+        },
+      ],
+      conclusion: [
+        "Our goal is to make the process as smooth and effective as possible by aligning our support with your communication preferences and needs.",
+      ],
+    },
   },
 ];
 export const SpecialData = [

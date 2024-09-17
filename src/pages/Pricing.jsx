@@ -3,6 +3,7 @@ import { Offers } from "../data";
 import Button from "../Components/Ui/Button";
 import checkIcon from "../assets/icons/circle-check-solid.svg";
 import { h3 } from "framer-motion/client";
+import { HashLink } from "react-router-hash-link";
 
 const Pricing = () => {
   return (
@@ -180,7 +181,7 @@ const Pricing = () => {
               </div>
               <div className="w-full">
                 <button className="bg-highlight rounded-xl w-full text-primary font-semibold text-[20px] hover:bg-hover1   duration-[.5s]   p-2">
-                  Get started
+                  <HashLink to="Contact/#calendly"> Get Started</HashLink>
                 </button>
               </div>
             </div>

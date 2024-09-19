@@ -17,6 +17,10 @@
   left: 5%;
 }
 
+.nav-link {
+  @apply border-b-2 border-transparent hover:border-highlight hover:text-black active:scale-105 transition duration-700;
+}
+
 .faq-answer {
   max-height: 0;
   opacity: 0;

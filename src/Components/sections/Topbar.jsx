@@ -14,16 +14,16 @@ const Topbar = () => {
         </Link>
         {/* Desktop Links */}
         <ul className="gap-12 text-secondary  text-xl hidden desktop:flex ">
-          <li>
+          <li className="nav-link">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="nav-link">
             <Link to="/Pricing">Offers</Link>
           </li>
-          <li>
+          <li className="nav-link">
             <Link to="/About">About</Link>
           </li>
-          <li>
+          <li className="nav-link">
             <Link to="/Contact">Contact</Link>
           </li>
         </ul>
@@ -43,7 +43,7 @@ const Topbar = () => {
         </div>
 
         <div
-          className={`z-10 bg-primary fixed inset-0 tablet:hidden flex items-center justify-center transform transition-transform duration-500 ease-in-out ${
+          className={`z-50 bg-primary fixed inset-0 tablet:hidden flex items-center justify-center transform transition-transform duration-500 ease-in-out ${
             toggleSideBar ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -55,6 +55,7 @@ const Topbar = () => {
           >
             X
           </button>
+          {/* // mobile links */}
           <ul
             className={`flex flex-col gap-10 text-[20px] font-bold w-full  text-center -tracking-tighter `}
           >

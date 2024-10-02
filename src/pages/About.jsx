@@ -52,7 +52,7 @@ const About = () => {
             Why we are special ?
           </h1>
           <div className="flex flex-col gap-6 relative p-2 ">
-            <h2 className="text-secondary/40 desktop:text-[55px] tablet:text-[45px] text-[30px] absolute right-12 tablet:-top-32 -top-20  ">
+            <h2 className="text-secondary/40 desktop:text-[55px] tablet:text-[45px]  text-[20px] xs:text-[30px]  xs:right-12 absolute right-2 tablet:-top-32 -top-10   ">
               Others
             </h2>
             {SpecialData.map((special, index) => {
@@ -60,15 +60,19 @@ const About = () => {
               const { icon, title, others, middle } = special;
               return (
                 <div className="flex justify-between  p-2 pb-4 items-center border-b-2 border-secondary h-[120px]">
-                  <div className="flex gap-2 ">
-                    <img src={icon} height="40px" width="40px" alt="icon" />
-                    <h1 className="text-center  text-[16px] tablet:text-[25px] text-bold ">
+                  <div className="flex items-center gap-2 xs:gap-4 ">
+                    <img
+                      className="h-[20px] w-[20px] xs:h-[40px]  xs:w-[40px]"
+                      src={icon}
+                      alt="icon"
+                    />
+                    <h1 className=" max-w-[40%] text-[10px] tablet:max-w-[100%] tablet:text-[20px] desktop:text-[26px]  text-bold ">
                       {" "}
                       {title}
                     </h1>
                   </div>
                   <div className="w-[20%] text-center ">
-                    <h1 className="text-[14px] tablet:text-[20px] ">
+                    <h1 className=" text-[11px] xs:text-[12px] tablet:text-[17px]  desktop:text-[20px] ">
                       {others}
                     </h1>
                   </div>
@@ -87,7 +91,7 @@ const About = () => {
                 const { middle } = mid;
                 return (
                   <div className="h-[120px] flex justify-center items-center  p-2  ">
-                    <h6 className="text-center text-[14px] font-bold tablet:text-[20px] text-secondary ">
+                    <h6 className="text-center text-[8px] xs:text-[12px] font-bold tablet:text-[15px] text-secondary ">
                       {middle}
                     </h6>
                   </div>

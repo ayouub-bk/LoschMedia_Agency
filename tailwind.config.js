@@ -17,7 +17,8 @@ export default {
       },
     },
     screens: {
-      tablet: "810px",
+      xs: "500px",
+      tablet: "800px",
       desktop: "1200px",
     },
     backgroundImage: {

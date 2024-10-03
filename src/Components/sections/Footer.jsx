@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <Link to="https://www.instagram.com/loschmedia/">
+                <Link to="https://www.facebook.com/profile.php?id=61566465937230&sk">
                   <img
                     src={fb}
                     alt="facebook"

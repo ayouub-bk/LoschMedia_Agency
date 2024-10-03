@@ -58,7 +58,7 @@ const HomeScreen = () => {
         <div>
           <OffersHome />
         </div>
-        <div>
+        <div className="w-full">
           <Faq />
         </div>
       </div>

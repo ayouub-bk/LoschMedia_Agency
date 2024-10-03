@@ -3,8 +3,7 @@ import Logo from "../../assets/imgs/Logo.jpg";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import insta from "../../assets/icons/instagram1.png";
-import linkeIn from "../../assets/icons/linkedin1.png";
-import youtub from "../../assets/icons/youtube.png";
+import fb from "../../assets/icons/fb.png";
 import ButtonOffer from "../Ui/ButtonOffer";
 import Button from "../Ui/Button";
 const Footer = () => {
@@ -16,32 +15,32 @@ const Footer = () => {
             className="rounded-lg object-fill "
             src={Logo}
             width="190px"
-            height="80"
+            height="130px"
             alt=""
           />
-          <h1 className="font-bold text-primary text-[24px]  ">
+          <h1 className="font-bold text-primary text-[28px] xs:text-[40px]   ">
             Book a meeting now{" "}
           </h1>
           <div className="flex justify-center gap-8 ">
             <Button />
           </div>
         </div>
-        <div className="flex tablet:gap-44 gap-20">
+        <div className="flex   tablet:gap-44 gap-20">
           <div>
             <h2 className="text-primary text-[25px] mb-2 -tracking-tighter font-semibold  ">
               Links
             </h2>
-            <ul className="text-primary text-[23px] flex flex-col gap-2 ">
-              <li>
+            <ul className="text-primary text-[23px] flex flex-col gap-2">
+              <li className="hover:text-highlight transition duration-100 text-[20px]">
                 <HashLink to="/#servicesHome">Services</HashLink>
               </li>
-              <li>
+              <li className="hover:text-highlight transition duration-100 text-[20px]">
                 <HashLink to="/Pricing#offersPr">Offers</HashLink>
               </li>
-              <li>
+              <li className="hover:text-highlight transition duration-100 text-[20px]">
                 <HashLink to="/About#AboutSc">About</HashLink>
               </li>
-              <li>
+              <li className="hover:text-highlight transition duration-100 text-[20px]">
                 <HashLink to="/Contact#calendly">Contact</HashLink>
               </li>
             </ul>
@@ -50,20 +49,20 @@ const Footer = () => {
             <h2 className=" text-primary text-[25px] mb-4  -tracking-tighter font-semibold ">
               Social Links
             </h2>
-            <ul className="social-links flex  flex-col  gap-4 items-center ">
+            <ul className="social-links flex flex-col justify-center   gap-4 items-center ">
               <li>
-                <Link to="https://www.instagram.com/karichahid/">
-                  <img src={insta} alt="insta" />
+                <Link to="https://www.instagram.com/loschmedia/">
+                  <img src={insta} alt="insta" width="40px" height="40px" />
                 </Link>
               </li>
+
               <li>
-                <Link to="https://www.linkedin.com/in/chahidkari/">
-                  <img src={linkeIn} alt="linkedIn" />
-                </Link>
-              </li>
-              <li>
-                <Link to="https://www.youtube.com/@ChahidKari">
-                  <img src={youtub} alt="youtub" />
+                <Link to="https://www.instagram.com/loschmedia/">
+                  <img
+                    src={fb}
+                    alt="facebook"
+                    className="border-2 rounded-md "
+                  />
                 </Link>
               </li>
             </ul>

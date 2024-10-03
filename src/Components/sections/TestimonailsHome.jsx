@@ -29,15 +29,10 @@ const TestimonailsHome = () => {
           </p>
           <div className=" flex justify-between items-center  ">
             <div className="flex gap-4 ">
-              <img
-                src={profile}
-                height="35px"
-                width="45px"
-                className="  rounded-[50%] object-center"
-              />
+              <img src={profile} className="w-12 h-12 rounded-full" />
               <div className="text-secondary">
-                <h2 className="text-[25px]">Wail dehar</h2>
-                <p className=" opacity-50 text-[14px] ">
+                <h2 className="text-[23px]">Wail dehar</h2>
+                <p className=" opacity-50 text-[13px] object-cover  ">
                   CEO of a video editing agency
                 </p>
               </div>

@@ -103,23 +103,11 @@ export const services = [
 export const Offers = [
   {
     start: [
-      'Slogan: "Accelerate Your Client Acquisition and Drive Your Business to Guaranteed Success".',
-      "🌟 Who We Are: Your Partner in Guaranteed Client Acquisition! 🌟",
-      "At LoshMedia we specialize in transforming leads into loyal, paying customers for B2B businesses. Our comprehensive approach covers every aspect of marketing and sales, ensuring you get the results you need without the hassle.",
-      "Irresistible Offer: Transform Your Business with Guaranteed Client Acquisition.",
+      ' Slogan : " Accelerate Your Client Acquisition and Drive Your Business to Guaranteed Success"',
     ],
 
     titel: "UCGE",
     elemet: [
-      {
-        subtitle: "Free First Client",
-        name: "",
-        description: [
-          "Receive your first client completely free with zero upfront costs.",
-          "Experience immediate value and results with no financial risk.",
-          "Only pay when we suc1cessfully bring in more clients.",
-        ],
-      },
       {
         subtitle: "Offer Consulting",
         name: "",
@@ -236,11 +224,11 @@ export const Offers = [
         ],
       },
       {
-        name: "Free Access to AI Tools",
+        name: "Integrate AI into Your Business for Free",
         description: [
-          "Get free access to top AI tools valued at $500+.",
-          "Use advanced AI to enhance your marketing and content creation.",
-          "Receive a 101 AI Prompts Guidebook tailored to your industry.",
+          "$500+ Value: Gain access to top AI tools that support your social media growth throughout our partnership at no cost.",
+          "AI Workflow Integration: Streamline your processes with integrated AI workflows tailored to your business needs.",
+          "AI Prompts Guide Book: 101 AI prompts tailored to any niche to enhance your content creation.",
         ],
       },
       {

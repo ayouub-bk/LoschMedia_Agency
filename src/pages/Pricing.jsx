@@ -102,15 +102,15 @@ const Pricing = () => {
               <div>
                 {offer.Guarunti && (
                   <div>
-                    <h2
+                    {/* <h2
                       className={`text-[25px] font-bold mb-2 ml-4 text-secondary  cursor-pointer`}
                     >
                       {" "}
                       Guarunti{" "}
-                    </h2>
-                    <h3 className="text-highlight text-[20px] my-4 ">
+                    </h2> */}
+                    {/* <h3 className="text-highlight text-[20px] my-4 ">
                       1 - Results-Only Guarantee
-                    </h3>
+                    </h3> */}
                   </div>
                 )}
                 {offer.Guarunti?.map((G) => {
@@ -131,7 +131,6 @@ const Pricing = () => {
                   );
                 })}
               </div>
-
               <div className="min-h-[230px] flex flex-col gap-4  ">
                 <h2
                   className={` ml-4 text-[25px] font-bold ${

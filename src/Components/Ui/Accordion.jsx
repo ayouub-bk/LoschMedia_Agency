@@ -18,7 +18,7 @@ const Accordion = ({ Q, A, Index }) => {
   // }, [A]);
 
   return (
-    <div className="p-2 shadow-md  w-full   ">
+    <div className="p-2 shadow-md min-h[100px]  ">
       <button
         className="flex items-center gap-4   pl-4 pt-4  "
         onClick={() => setOpen(!open)}
@@ -34,11 +34,15 @@ const Accordion = ({ Q, A, Index }) => {
         <span className="text-secondary text-[22px]  ">{Q}</span>
       </button>
       <div
-        className={` overflow-hidden transition-all duration-700 ease-in-out   flex flex-col gap-4 p-6 ${
+        className={` overflow-hidden transition-all duration-700 ease-in-out   flex flex-col gap-4    ${
           open ? `h-${contentHeight.current}px opacity-100 ` : `opacity-0 h-0  `
         }  `}
       >
-        <div key={Index} className="overflow-hidden mt-2   " data-id={A.Index}>
+        <div
+          key={Index}
+          className="overflow-hidden mt-2  p-6 "
+          data-id={A.Index}
+        >
           <div>
             {A.title &&
               A.title.map((T) => {

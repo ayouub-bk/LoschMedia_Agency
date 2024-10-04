@@ -13,7 +13,7 @@ const TestimonailsHome = () => {
       </h1>
       <div className="flex flex-col desktop:flex-row   justify-center gap-12 w-full mt-6">
         <div className="desktop:w-[35%]   w-full  border-secondary border-solid  border-8 rounded-md ">
-          <video className="h-full" src={video} width="100%" controls></video>
+          <video className="h-full z-20 " src={video} controls></video>
         </div>
         <div className="py-[10px] px-[22px]  shadow-md relative w-full desktop:w-[55%] flex flex-col justify-between  gap-2">
           <div className="flex justify-between px-4  ">

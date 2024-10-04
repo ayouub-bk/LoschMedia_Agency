@@ -5,7 +5,7 @@ import videoBG from "../../assets/vid/videoBG.mp4";
 const Header = () => {
   return (
     <>
-      <div className=" flex h-[100vh]  overflow-hidden  flex-col gap-4  items-center justify-center relative  ">
+      <div className=" flex h-[100vh] overflow-hidden  flex-col gap-4  items-center justify-center relative  ">
         <video
           className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2"
           autoPlay

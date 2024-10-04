@@ -3,7 +3,6 @@ import Button from "../Ui/Button";
 import { Link } from "react-router-dom";
 import logo from "../../assets/imgs/Logo.jpg";
 import menu from "../../assets/icons/bars-solid.svg";
-import { BluetoothIcon } from "lucide-react";
 const Topbar = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
@@ -13,7 +12,7 @@ const Topbar = () => {
           <img className="w-[154px] h-[54px]" src={logo} alt="" />
         </Link>
         {/* Desktop Links */}
-        <ul className="gap-12 text-secondary  text-xl hidden desktop:flex ">
+        <ul className="gap-12 text-secondary font-bold text-xl hidden desktop:flex ">
           <li className="nav-link">
             <Link to="/">Home</Link>
           </li>

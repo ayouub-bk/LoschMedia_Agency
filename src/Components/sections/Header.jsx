@@ -5,16 +5,10 @@ import videoBG from "../../assets/vid/videoBG.mp4";
 const Header = () => {
   return (
     <>
-      <div className=" flex h-[100vh] overflow-hidden  flex-col gap-4  items-center justify-center relative  ">
-        <video
-          className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2"
-          autoPlay
-          muted
-          loop
-        >
-          <source src={videoBG} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className=" flex h-[100vh] overflow-hidden  flex-col gap-4  items-center justify-center relative bg-black
+       ">
+       
+         
         <div className="flex flex-col items-center  z-10   text-center text-primary">
           <h1 className=" text-[39px] tablet:text-[61px]  ">
             <span className="hidden tablet:inline ">LoshMedia: Proven</span>

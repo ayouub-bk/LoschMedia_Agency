@@ -7,7 +7,10 @@ const Topbar = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
     <>
-      <nav className=" flex justify-between items-center p-4 tablet:px-20 px-10   shadow-md ">
+ 
+
+  
+      <nav className=" flex justify-between items-center p-4 tablet:px-20 px-10      shadow-md ">
         <Link to="/">
           <img className="w-[154px] h-[54px]" src={logo} alt="" />
         </Link>
@@ -85,7 +88,8 @@ const Topbar = () => {
           </ul>
         </div>
       </nav>
-    </>
+  </>
+  
   );
 };
 

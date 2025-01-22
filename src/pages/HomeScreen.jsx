@@ -12,8 +12,8 @@ const HomeScreen = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col max-w-[100%] items-center desktop:p-10 p-6   ">
-        <div className="about-losch-media p-4 w-screen flex flex-col justify-center items-center mb-20 tablet:mb-0 ">
+      <div className="flex flex-col border-2  justfiy-center items-center p-6   ">
+        <div className="about-losch-media p-4  flex flex-col justify-center items-center mb-20 tablet:mb-0  ">
           <h1 className="highlighted-title hidden  tablet:block  tablet:text-secondary text-[48px]   ">
             About LoshMedia
           </h1>
@@ -58,7 +58,7 @@ const HomeScreen = () => {
         <div>
           <OffersHome />
         </div>
-        <div className="w-full">
+        <div className="">
           <Faq />
         </div>
       </div>
